@@ -12,19 +12,20 @@ import json
 import os
 import sys
 from pathlib import Path
+from google import genai
 
-try:
-    from google import genai
-    from google.genai import types
-except ImportError:
-    sys.exit("pip install google-genai")
 
-key = os.environ.get("GEMINI_API_KEY")
-if not key:
-    sys.exit("GEMINI_API_KEY is not set in this terminal.")
-print(f"API key found, starts with: {key[:8]}...\n")
-
-client = genai.Client(api_key=key)
+# Check if we are running locally or on GCP
+if os.environ.get("K_SERVICE"):  # This env var is automatically set by Cloud Run
+    print("Running on Cloud Run. Authenticating via Vertex AI service account...")
+    # Initialize using Vertex AI mode (Zero API keys required!)
+    client = genai.Client(vertexai=True)
+else:
+    print("Running locally. Falling back to local environment key...")
+    key = os.environ.get("GEMINI_API_KEY")
+    if not key:
+        sys.exit("GEMINI_API_KEY is not set in this terminal.")
+    client = genai.Client(api_key=key)
 
 # ---------------------------------------------------------------- 1. models
 print("=" * 64)

@@ -44,18 +44,20 @@ from google.cloud import datastore
 from google_auth_oauthlib.flow import Flow
 
 
-BASE = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent
 
 # Cloud Run file systems are ephemeral. Use /tmp for runtime results if necessary,
 # but ideally, switch token.json and ember_signals.json saving/loading to Datastore.
 DATA = Path("/tmp/data")
-PIPELINE = BASE / "pipeline"
-DEMO_DIR = BASE / "demo_data"
-STATIC = BASE / "static"
+PIPELINE = BASE_DIR / "pipeline"    # FIX: Changed from BASE to BASE_DIR
+DEMO_DIR = BASE_DIR / "demo_data"  # FIX: Changed from BASE to BASE_DIR
+STATIC = BASE_DIR / "static"        # FIX: Changed from BASE to BASE_DIR
+
 DATA.mkdir(exist_ok=True, parents=True)
-DATA.mkdir(exist_ok=True)
 
 SCOPES = ["https://www.googleapis.com/auth/youtube.readonly"]
+
+app = FastAPI()
 
 # 1. Initialize Datastore Client for production state & token persistence
 db = datastore.Client(database="ember")
@@ -63,17 +65,17 @@ db = datastore.Client(database="ember")
 
 # 2. In production, load the client secret string from Secret Manager instead of a local file
 # Fallback to local path for local development
-CLIENT_SECRET = Path(os.environ.get("EMBER_CLIENT_SECRET", "client_secret.json"))
+CLIENT_SECRET = BASE_DIR / "client_secret.json"
 TOKEN_FILE = DATA / "token.json"
 SIGNALS = DATA / "ember_signals.json"
 
 # 3. Dynamic Redirect URI for Google OAuth
 # Cloud Run automatically sets your service URL or custom domain.
 # Make sure to add this production URL to your Google Cloud Console OAuth Authorized Redirect URIs!
-REDIRECT_URI = os.environ.get("EMBER_REDIRECT_URI")
-if not REDIRECT_URI:
+BASE_REDIRECT_URI = os.environ.get("EMBER_REDIRECT_URI")
+if not BASE_REDIRECT_URI:
     # If not set via env var, you can dynamically build it from the incoming request inside your auth route
-    REDIRECT_URI = "http://localhost:8080/auth/callback"
+    BASE_REDIRECT_URI = "http://localhost:8080/auth/callback"
 
 DEMO_FORCED = os.environ.get("EMBER_DEMO") == "1"
 CHILD_NAME = os.environ.get("EMBER_CHILD_NAME")
@@ -81,7 +83,7 @@ _age = os.environ.get("EMBER_CHILD_AGE", "")
 DEFAULT_AGE = int(_age) if _age.isdigit() else None
 
 # 4. Strictly allow insecure transport ONLY if running locally
-if REDIRECT_URI.startswith("http://localhost"):
+if BASE_REDIRECT_URI.startswith("http://localhost"):
     os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 else:
     # Cloud Run handles HTTPS encryption automatically, but python-oauthlib needs to know it's secure
@@ -106,9 +108,6 @@ DOMAIN_LABELS = {
     "toys_unboxing_shopping": "Toys, unboxing and shopping",
     "other": "Other",
 }
-
-app = FastAPI(title="Ember for Family Link")
-
 
 # --------------------------------------------------------------------------
 # helpers
@@ -141,9 +140,13 @@ _pending_verifiers = {}  # state -> PKCE code_verifier
 
 def _flow(state=None):
     return Flow.from_client_secrets_file(
-        str(CLIENT_SECRET), scopes=SCOPES, redirect_uri=REDIRECT_URI, state=state
+        str(CLIENT_SECRET), scopes=SCOPES, redirect_uri=BASE_REDIRECT_URI, state=state
     )
 
+
+@app.get("/")
+def read_root():
+    return FileResponse(STATIC / "index.html")
 
 @app.get("/auth/start")
 def auth_start():
