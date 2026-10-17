@@ -1,0 +1,6 @@
+client_secret.json
+data/*
+!data/.gitkeep
+.venv/
+__pycache__/
+*.pyc

@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-10-16T10:00:00+00:00",
+  "model": "demo",
+  "child_age": 11,
+  "quest": {
+    "title": "Build a jar rainforest together",
+    "theme_name": "Making things by hand, carefully",
+    "why_this": "Llamie liked two terrarium builds and the handmade ramen video, and all three are about patient, layered making. This turns that watching into a small build with real moss and soil.",
+    "duration_minutes": 75,
+    "cost": "low",
+    "materials": [
+      "Clear glass jar with a lid",
+      "Small stones or gravel",
+      "Potting soil",
+      "Moss from the garden or a plant shop",
+      "One small humidity-loving plant",
+      "Spray bottle",
+      "Tweezers or chopsticks"
+    ],
+    "steps": [
+      "Wash the jar and let it dry fully.",
+      "Add a 2 cm layer of stones at the bottom for drainage.",
+      "Add soil on top, about 4 cm deep, and shape a small hill.",
+      "Plant the small plant, then press moss around it using tweezers.",
+      "Mist lightly until the moss looks damp but not soaked.",
+      "Close the lid, set the jar in bright light without direct sun, and check it every day for a week."
+    ],
+    "child_role": "Llamie designs the layout and does the fine placing with the tweezers, as in the videos.",
+    "parent_role": "Help collect materials, ask questions while it is built, and keep an eye on the misting.",
+    "conversation_prompt": "What do you think will happen to the water inside the jar over the next few days?",
+    "success_looks_like": "A sealed jar with moss that stays green, and Llamie able to explain why the stones are at the bottom.",
+    "safety_note": "Wash hands after handling soil and moss.",
+    "based_on_video_ids": [
+      "demo_09",
+      "demo_10",
+      "demo_12"
+    ]
+  }
+}

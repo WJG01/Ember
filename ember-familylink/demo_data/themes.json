@@ -1,0 +1,91 @@
+{
+  "parent_summary": "Most of what Llamie liked is about watching careful work: things made by hand, machines running smoothly and the hidden workings of big places. A little over half has real learning in it. One video leans hard on buying pressure and chance-based rewards, and it is worth a conversation.",
+  "themes": [
+    {
+      "id": "t1",
+      "name": "Making things by hand, carefully",
+      "video_ids": [
+        "demo_12",
+        "demo_10",
+        "demo_09",
+        "demo_07"
+      ],
+      "video_count": 4,
+      "insight": "Llamie is drawn to slow, precise making, whether it is noodles, a jar garden or a restored knife. The pull is watching a patient process become something finished.",
+      "reasoning": "The subjects are food, plants and tools, but each video shows one person building something step by step with close-up care.",
+      "evidence": [
+        "The cook trims each noodle to the same length",
+        "Every plant is placed with tweezers",
+        "The restorer checks the edge against a ruler"
+      ],
+      "confidence": "high",
+      "trajectory": "steady",
+      "transferability": "high",
+      "growth_direction": "Could grow into cooking, gardening or model making."
+    },
+    {
+      "id": "t2",
+      "name": "Peeking behind the scenes",
+      "video_ids": [
+        "demo_04",
+        "demo_03"
+      ],
+      "video_count": 2,
+      "insight": "Llamie likes seeing how a familiar place or system works underneath.",
+      "reasoning": "A theme park and an airport look nothing alike, but both videos open up a hidden system and explain its logic.",
+      "evidence": [
+        "An operator explains what each colour on the screen means",
+        "An animation slows a diverter down to show how it works"
+      ],
+      "confidence": "medium",
+      "trajectory": "steady",
+      "transferability": "medium",
+      "growth_direction": "Could grow into systems design or engineering."
+    },
+    {
+      "id": "t3",
+      "name": "Machines working beautifully",
+      "video_ids": [
+        "demo_11",
+        "demo_06"
+      ],
+      "video_count": 2,
+      "insight": "Llamie enjoys machines that do a job smoothly, from big cleanup robots to repeating factory loops.",
+      "reasoning": "One video explains a machine and one just shows it, but both are about smooth, repeatable motion.",
+      "evidence": [
+        "A diagram follows one bottle through the cleanup machine",
+        "Each factory clip loops a single motion"
+      ],
+      "confidence": "medium",
+      "trajectory": "rising",
+      "transferability": "medium",
+      "growth_direction": "Could grow into robotics or mechanical design."
+    },
+    {
+      "id": "t4",
+      "name": "Chasing the rarest find",
+      "video_ids": [
+        "demo_02",
+        "demo_01"
+      ],
+      "video_count": 2,
+      "insight": "Llamie is pulled by rarity: which item is scarcest and what it is worth.",
+      "reasoning": "A mystery box video and a card tier list both turn on ranking things by how rare they are.",
+      "evidence": [
+        "Each reveal is built up before the item is shown",
+        "Cards are placed in tiers by how few exist"
+      ],
+      "confidence": "medium",
+      "trajectory": "steady",
+      "transferability": "low",
+      "growth_direction": "Mostly something to watch, though it could open a talk about value and odds."
+    }
+  ],
+  "unassigned_video_ids": [
+    "demo_08",
+    "demo_05"
+  ],
+  "generated_at": "2026-10-16T10:00:00+00:00",
+  "model": "demo",
+  "child_age": 11
+}

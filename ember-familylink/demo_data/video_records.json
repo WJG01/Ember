@@ -1,0 +1,517 @@
+[
+  {
+    "video_id": "demo_01",
+    "url": "",
+    "title": "Ranking every rare card from worst to best",
+    "channel": "Tier Talk",
+    "liked_at": "2026-10-16T14:20:00Z",
+    "analysis": {
+      "summary": "A host sorts a collection of rare cards into a tier list from worst to best and argues over each placement. Market values are quoted for the top cards.",
+      "key_points": [
+        "Cards sorted into tiers",
+        "Debate over each placement",
+        "Market values quoted for the top cards"
+      ],
+      "domain": "gaming",
+      "topic": "collectible card rankings",
+      "educational_value": "low",
+      "educational_reasoning": "Mostly opinion and ranking, with a little about how rarity sets a price.",
+      "what_child_may_learn": [
+        "How rarity and demand change what a card is worth."
+      ],
+      "age_suitability": "all_ages",
+      "safety_flags": [
+        "none"
+      ],
+      "safety_note": "",
+      "parent_flag": "ok",
+      "conversation_starter": "Which card would you rank first, and what makes it better than the rest?",
+      "follow_up_idea": "",
+      "surface_topic": "collectible card tier list",
+      "underlying_draw": "Ranking things by rarity and value.",
+      "concepts": [
+        "rarity",
+        "tier lists",
+        "market value"
+      ],
+      "modality": "passive",
+      "vocabulary_band": "age_9_11",
+      "affect": "excited, opinionated",
+      "latent_skill": "comparing and judging value",
+      "transferable": false,
+      "evidence": "The host places each card in a tier and justifies it by how few exist."
+    }
+  },
+  {
+    "video_id": "demo_02",
+    "url": "",
+    "title": "Opening 50 mystery loot boxes: the rarest pull ever",
+    "channel": "Mystery Mike",
+    "liked_at": "2026-10-15T09:05:00Z",
+    "analysis": {
+      "summary": "A creator opens dozens of paid mystery boxes on camera, reacting to each pull and ranking items by rarity. They repeatedly urge viewers to buy boxes through a code in the description.",
+      "key_points": [
+        "Boxes opened one after another",
+        "Items ranked by rarity",
+        "Viewers urged to use a purchase code"
+      ],
+      "domain": "toys_unboxing_shopping",
+      "topic": "mystery box openings",
+      "educational_value": "none",
+      "educational_reasoning": "Entertainment built around opening paid boxes; nothing is explained.",
+      "what_child_may_learn": [],
+      "age_suitability": "age_13_plus",
+      "safety_flags": [
+        "heavy_advertising_or_buying_pressure",
+        "gambling_like_mechanics"
+      ],
+      "safety_note": "Chance-based paid boxes are shown as exciting, and viewers are told to buy using a code, from around 1:30 and again near the end.",
+      "parent_flag": "review",
+      "conversation_starter": "What do you think the odds are of getting the rarest item, and who benefits when people keep buying?",
+      "follow_up_idea": "",
+      "surface_topic": "mystery box unboxing",
+      "underlying_draw": "The thrill of uncertain rewards and chasing rarity.",
+      "concepts": [
+        "mystery boxes",
+        "rarity",
+        "promo codes"
+      ],
+      "modality": "reactive",
+      "vocabulary_band": "age_9_11",
+      "affect": "hyped, urgent",
+      "latent_skill": "none",
+      "transferable": false,
+      "evidence": "Each reveal is built up with a countdown before the item is shown."
+    }
+  },
+  {
+    "video_id": "demo_03",
+    "url": "",
+    "title": "How airport baggage systems actually work",
+    "channel": "How It Works Daily",
+    "liked_at": "2026-10-14T16:40:00Z",
+    "analysis": {
+      "summary": "An engineer follows a suitcase from check-in through barcode scanners, sorting belts and diverters to the plane. Animations show how a diverter reads a tag and flips a gate in under a second.",
+      "key_points": [
+        "Check-in and barcode tagging",
+        "Scanners and sorting belts",
+        "Diverters flipping gates"
+      ],
+      "domain": "building_engineering",
+      "topic": "baggage handling",
+      "educational_value": "high",
+      "educational_reasoning": "Follows one suitcase through every stage, so a child could retell how it is sorted.",
+      "what_child_may_learn": [
+        "How barcode scanners route a bag to the right plane.",
+        "What a diverter does and why it has to be fast."
+      ],
+      "age_suitability": "all_ages",
+      "safety_flags": [
+        "none"
+      ],
+      "safety_note": "",
+      "parent_flag": "ok",
+      "conversation_starter": "If you had to design it, how would you stop a bag going to the wrong plane?",
+      "follow_up_idea": "Make a paper-and-string sorter that sends coloured balls down the right ramp.",
+      "surface_topic": "airport baggage system",
+      "underlying_draw": "Seeing the logic of a hidden system laid out clearly.",
+      "concepts": [
+        "barcodes",
+        "sorting",
+        "diverters",
+        "conveyors"
+      ],
+      "modality": "procedural",
+      "vocabulary_band": "age_9_11",
+      "affect": "curious, clear",
+      "latent_skill": "systems thinking",
+      "transferable": true,
+      "evidence": "An animation slows a diverter down to show the tag being read and the gate flipping."
+    }
+  },
+  {
+    "video_id": "demo_04",
+    "url": "",
+    "title": "Inside the secret control room of a theme park",
+    "channel": "Behind the Park",
+    "liked_at": "2026-10-12T11:15:00Z",
+    "analysis": {
+      "summary": "A tour of the control room that monitors rides, queues and safety systems across a theme park. Operators explain what the screens show and what they do when a ride stops.",
+      "key_points": [
+        "Queue and ride screens",
+        "Safety alerts",
+        "What operators do when a ride stops"
+      ],
+      "domain": "building_engineering",
+      "topic": "theme park operations",
+      "educational_value": "moderate",
+      "educational_reasoning": "Operators explain what the screens show and what happens when a ride stops.",
+      "what_child_may_learn": [
+        "How a park watches queues, rides and safety at once."
+      ],
+      "age_suitability": "all_ages",
+      "safety_flags": [
+        "none"
+      ],
+      "safety_note": "",
+      "parent_flag": "ok",
+      "conversation_starter": "What would you want on the screens if you ran the park?",
+      "follow_up_idea": "Draw a control-room dashboard for a pretend park, with the three things you would watch first.",
+      "surface_topic": "theme park control room",
+      "underlying_draw": "Getting to see the hidden machinery that makes a familiar place work.",
+      "concepts": [
+        "monitoring",
+        "queues",
+        "safety systems"
+      ],
+      "modality": "narrative",
+      "vocabulary_band": "age_9_11",
+      "affect": "curious, behind-the-scenes",
+      "latent_skill": "operations thinking",
+      "transferable": true,
+      "evidence": "An operator points to one screen and explains the colour that means a ride has stopped."
+    }
+  },
+  {
+    "video_id": "demo_05",
+    "url": "",
+    "title": "Eating the world's spiciest noodles challenge",
+    "channel": "Hot Seat",
+    "liked_at": "2026-10-11T19:30:00Z",
+    "analysis": {
+      "summary": "A host eats extremely hot noodles while others dare them to continue despite coughing and crying. The video ends with the host unwell.",
+      "key_points": [
+        "Noodles get hotter each round",
+        "Others dare the host to continue",
+        "The host is unwell at the end"
+      ],
+      "domain": "humor_entertainment",
+      "topic": "spicy food challenge",
+      "educational_value": "none",
+      "educational_reasoning": "Pure entertainment based on a dare.",
+      "what_child_may_learn": [],
+      "age_suitability": "age_13_plus",
+      "safety_flags": [
+        "risky_challenge_or_imitable_danger"
+      ],
+      "safety_note": "Extreme-heat food challenge that a child might copy, with peer pressure to continue, throughout.",
+      "parent_flag": "note",
+      "conversation_starter": "Why do you think people keep going when it clearly hurts?",
+      "follow_up_idea": "",
+      "surface_topic": "spicy noodle challenge",
+      "underlying_draw": "Watching someone push a limit for a dare.",
+      "concepts": [
+        "dares",
+        "peer pressure"
+      ],
+      "modality": "reactive",
+      "vocabulary_band": "age_9_11",
+      "affect": "loud, tense",
+      "latent_skill": "none",
+      "transferable": false,
+      "evidence": "Friends chant to keep the host eating while they cough."
+    }
+  },
+  {
+    "video_id": "demo_06",
+    "url": "",
+    "title": "Oddly satisfying factory machines compilation",
+    "channel": "Satisfying Machines",
+    "liked_at": "2026-10-09T08:50:00Z",
+    "analysis": {
+      "summary": "A compilation of short clips of machines stamping, folding and packing products in perfect repeating rhythm. There is music and no narration.",
+      "key_points": [
+        "Stamping and folding clips",
+        "Packing lines",
+        "Music, no narration"
+      ],
+      "domain": "humor_entertainment",
+      "topic": "factory machine loops",
+      "educational_value": "low",
+      "educational_reasoning": "Calming to watch, with little explained.",
+      "what_child_may_learn": [
+        "Machines repeat steps in a fixed rhythm."
+      ],
+      "age_suitability": "all_ages",
+      "safety_flags": [
+        "none"
+      ],
+      "safety_note": "",
+      "parent_flag": "ok",
+      "conversation_starter": "Which machine would you want to watch for an hour, and why?",
+      "follow_up_idea": "",
+      "surface_topic": "oddly satisfying machines",
+      "underlying_draw": "Watching machines repeat a perfect rhythm.",
+      "concepts": [
+        "repetition",
+        "automation"
+      ],
+      "modality": "passive",
+      "vocabulary_band": "age_9_11",
+      "affect": "calm, hypnotic",
+      "latent_skill": "none",
+      "transferable": false,
+      "evidence": "Each clip loops a single motion until it feels hypnotic."
+    }
+  },
+  {
+    "video_id": "demo_07",
+    "url": "",
+    "title": "Restoring a rusty old kitchen knife",
+    "channel": "Old Tools Revived",
+    "liked_at": "2026-10-08T13:25:00Z",
+    "analysis": {
+      "summary": "A restorer removes rust from an old kitchen knife with a vinegar soak and sanding, re-grinds the edge on a whetstone, and fits a new handle. The before and after is shown side by side.",
+      "key_points": [
+        "Vinegar soak",
+        "Sanding and re-grinding",
+        "New handle and before-and-after"
+      ],
+      "domain": "life_skills",
+      "topic": "tool restoration",
+      "educational_value": "moderate",
+      "educational_reasoning": "Shows each stage of the restoration clearly, though the safety side is thin.",
+      "what_child_may_learn": [
+        "How rust is removed and an edge is re-ground."
+      ],
+      "age_suitability": "age_8_plus",
+      "safety_flags": [
+        "risky_challenge_or_imitable_danger"
+      ],
+      "safety_note": "Sharp blade and power sanding shown without much guidance, around 4:10.",
+      "parent_flag": "note",
+      "conversation_starter": "What do you think makes a tool worth fixing rather than replacing?",
+      "follow_up_idea": "With an adult, clean and oil an old hand tool, then use it to make something simple.",
+      "surface_topic": "rusty knife restoration",
+      "underlying_draw": "Watching careful work turn something worn into something finished.",
+      "concepts": [
+        "rust removal",
+        "sharpening",
+        "handle fitting"
+      ],
+      "modality": "procedural",
+      "vocabulary_band": "age_9_11",
+      "affect": "calm, methodical",
+      "latent_skill": "tool restoration",
+      "transferable": true,
+      "evidence": "The restorer checks the edge against a ruler before moving on."
+    }
+  },
+  {
+    "video_id": "demo_08",
+    "url": "",
+    "title": "Kyoto street food challenge: the weirdest snacks",
+    "channel": "Street Bites",
+    "liked_at": "2026-10-06T10:10:00Z",
+    "analysis": {
+      "summary": "A host walks a Kyoto market trying unusual snacks, including glazed baby octopus stuffed with quail egg and dumpling-filled chicken wings. A takoyaki stand uses a blowtorch to sear the tops. Prices are converted from yen as they go.",
+      "key_points": [
+        "Market walk",
+        "Unusual snacks tried",
+        "Takoyaki stand with a blowtorch"
+      ],
+      "domain": "cooking_food",
+      "topic": "Japanese street snacks",
+      "educational_value": "low",
+      "educational_reasoning": "Fun to watch, with only passing detail about the food.",
+      "what_child_may_learn": [
+        "A few names of Japanese street snacks."
+      ],
+      "age_suitability": "all_ages",
+      "safety_flags": [
+        "none"
+      ],
+      "safety_note": "",
+      "parent_flag": "ok",
+      "conversation_starter": "Which snack would you try first, and which would you skip?",
+      "follow_up_idea": "Make one simple Japanese street snack at home with an adult.",
+      "surface_topic": "street food challenge",
+      "underlying_draw": "Curiosity about unfamiliar foods and how they are made.",
+      "concepts": [
+        "street food",
+        "takoyaki",
+        "currency"
+      ],
+      "modality": "narrative",
+      "vocabulary_band": "age_9_11",
+      "affect": "playful, curious",
+      "latent_skill": "cooking",
+      "transferable": true,
+      "evidence": "The host converts each price from yen out loud."
+    }
+  },
+  {
+    "video_id": "demo_09",
+    "url": "",
+    "title": "DIY Mini Terrarium Setup in a Small Jar!",
+    "channel": "Little Green Worlds",
+    "liked_at": "2026-10-04T15:00:00Z",
+    "analysis": {
+      "summary": "A creator builds a miniature closed terrarium in a small glass jar. They layer river sand, white sand and soil, place lava rocks, then arrange sheet moss, clubmoss and Fittonia with tweezers before misting and sealing the lid.",
+      "key_points": [
+        "Sand and soil layers",
+        "Lava rocks placed with tweezers",
+        "Moss and Fittonia planted, then misted and sealed"
+      ],
+      "domain": "science_nature",
+      "topic": "jar terrarium building",
+      "educational_value": "moderate",
+      "educational_reasoning": "Labels each material and plant and shows the layering in order.",
+      "what_child_may_learn": [
+        "The layers a closed terrarium needs.",
+        "Names of common terrarium plants."
+      ],
+      "age_suitability": "all_ages",
+      "safety_flags": [
+        "none"
+      ],
+      "safety_note": "",
+      "parent_flag": "ok",
+      "conversation_starter": "How do you think plants survive sealed inside a jar?",
+      "follow_up_idea": "Make a closed jar garden with stones, soil and moss.",
+      "surface_topic": "making a mini terrarium",
+      "underlying_draw": "The calm rhythm of building a tiny living world inside glass.",
+      "concepts": [
+        "layering",
+        "micro-ecosystem",
+        "hardscaping"
+      ],
+      "modality": "procedural",
+      "vocabulary_band": "age_9_11",
+      "affect": "calm, methodical",
+      "latent_skill": "terrarium crafting",
+      "transferable": true,
+      "evidence": "Every plant is placed with tweezers and flattened with a tiny tool."
+    }
+  },
+  {
+    "video_id": "demo_10",
+    "url": "",
+    "title": "I made a forest style terrarium with rainfall and mist",
+    "channel": "Little Green Worlds",
+    "liked_at": "2026-10-03T12:30:00Z",
+    "analysis": {
+      "summary": "A creator builds an automated rainforest terrarium in a long glass tank. They hide a pump and mist maker in the corners, add a false bottom, set driftwood and lava rock, plant moss and ferns, then switch on the rain and fog.",
+      "key_points": [
+        "Hidden pump and mist chambers",
+        "False bottom drainage",
+        "Rain and fog switched on"
+      ],
+      "domain": "science_nature",
+      "topic": "rainforest terrarium",
+      "educational_value": "moderate",
+      "educational_reasoning": "Shows how drainage and humidity systems keep a sealed tank healthy.",
+      "what_child_may_learn": [
+        "Why a false bottom protects roots.",
+        "How mist and rain mimic a rainforest."
+      ],
+      "age_suitability": "all_ages",
+      "safety_flags": [
+        "none"
+      ],
+      "safety_note": "",
+      "parent_flag": "ok",
+      "conversation_starter": "What was the cleverest way the builder hid the pump?",
+      "follow_up_idea": "Make a closed jar garden with a drainage layer.",
+      "surface_topic": "building a rainforest terrarium",
+      "underlying_draw": "The calm, satisfying assembly of raw materials into a miniature living world.",
+      "concepts": [
+        "false bottom",
+        "humidity",
+        "hardscape"
+      ],
+      "modality": "procedural",
+      "vocabulary_band": "age_9_11",
+      "affect": "calm, methodical",
+      "latent_skill": "vivarium design",
+      "transferable": true,
+      "evidence": "Moss clumps are pressed into wet driftwood crevices one at a time."
+    }
+  },
+  {
+    "video_id": "demo_11",
+    "url": "",
+    "title": "The giant robot that cleans the ocean",
+    "channel": "How It Works Daily",
+    "liked_at": "2026-10-02T17:45:00Z",
+    "analysis": {
+      "summary": "A short documentary on a floating machine that collects plastic from a river mouth. It explains the conveyor, the barrier that guides debris and how the collected waste is sorted on shore.",
+      "key_points": [
+        "Floating barrier",
+        "Conveyor",
+        "Sorting on shore"
+      ],
+      "domain": "technology_coding",
+      "topic": "ocean cleanup robots",
+      "educational_value": "moderate",
+      "educational_reasoning": "Explains the parts of the machine and why each one is needed.",
+      "what_child_may_learn": [
+        "How a barrier guides debris onto a conveyor."
+      ],
+      "age_suitability": "all_ages",
+      "safety_flags": [
+        "none"
+      ],
+      "safety_note": "",
+      "parent_flag": "ok",
+      "conversation_starter": "If you built a cleanup machine, what would you copy from this one?",
+      "follow_up_idea": "Sketch your own river-cleaning machine and label the moving parts.",
+      "surface_topic": "ocean cleanup robot",
+      "underlying_draw": "Watching a machine solve a big problem step by step.",
+      "concepts": [
+        "conveyors",
+        "barriers",
+        "recycling"
+      ],
+      "modality": "narrative",
+      "vocabulary_band": "age_9_11",
+      "affect": "hopeful, curious",
+      "latent_skill": "engineering design",
+      "transferable": true,
+      "evidence": "A diagram traces one bottle from the barrier to the sorting bins."
+    }
+  },
+  {
+    "video_id": "demo_12",
+    "url": "",
+    "title": "Making ramen noodles from scratch, start to finish",
+    "channel": "Handmade Kitchen",
+    "liked_at": "2026-09-29T09:20:00Z",
+    "analysis": {
+      "summary": "A cook mixes flour, water and alkaline salt into a stiff dough, rests it, rolls and cuts it into noodles, then builds a pork broth and assembles the bowl. Each step is shown close up with the dough's texture explained as it changes.",
+      "key_points": [
+        "Dough mixed and rested",
+        "Rolled and cut into noodles",
+        "Broth built and bowl assembled"
+      ],
+      "domain": "cooking_food",
+      "topic": "hand-pulled ramen",
+      "educational_value": "moderate",
+      "educational_reasoning": "Each step is shown close up with the dough's texture explained as it changes.",
+      "what_child_may_learn": [
+        "How dough changes as it rests and is rolled."
+      ],
+      "age_suitability": "all_ages",
+      "safety_flags": [
+        "none"
+      ],
+      "safety_note": "",
+      "parent_flag": "ok",
+      "conversation_starter": "Which step looked hardest to get right?",
+      "follow_up_idea": "Make a simple hand-cut noodle dough with an adult.",
+      "surface_topic": "homemade ramen",
+      "underlying_draw": "Watching something made by hand with visible precision.",
+      "concepts": [
+        "dough",
+        "resting",
+        "broth"
+      ],
+      "modality": "procedural",
+      "vocabulary_band": "age_9_11",
+      "affect": "calm, methodical",
+      "latent_skill": "cooking",
+      "transferable": true,
+      "evidence": "The cook trims each noodle to the same length."
+    }
+  }
+]

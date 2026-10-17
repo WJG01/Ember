@@ -39,7 +39,7 @@ def authenticate():
     if not os.path.exists(CLIENT_SECRET):
         sys.exit(f"Missing {CLIENT_SECRET}. See SETUP in the docstring.")
     flow = InstalledAppFlow.from_client_secrets_file(CLIENT_SECRET, SCOPES)
-    creds = flow.run_local_server(port=0)
+    creds = flow.run_local_server(port=8080, open_browser=False)
     return build("youtube", "v3", credentials=creds)
 
 
