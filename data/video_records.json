@@ -1,0 +1,97 @@
+[
+  {
+    "video_id": "4Qb6_zVYcik",
+    "url": "https://www.youtube.com/watch?v=4Qb6_zVYcik",
+    "title": "i made a forest style terrarium with a rainfall and mist | rainfall terrarium",
+    "channel": "Lang diy",
+    "liked_at": "2026-10-17T03:56:18Z",
+    "analysis": {
+      "summary": "A creator designs and constructs an enclosed rainforest vivarium inside an empty glass aquarium. They build corner filtration chambers, lay down drainage cells and branches, add filter floss and lava rock substrates, and meticulously plant live moss and ferns. Finally, they install an automated pump, mist maker, and dripping rain lid to create a self-contained humid ecosystem.",
+      "key_points": [
+        "Building corner pump and misting chambers from foam board and mesh.",
+        "Installing drain cells, glued driftwood, and filter floss to create an elevated false bottom.",
+        "Layering lava rock and clay substrate before planting diverse mosses and tropical plants.",
+        "Testing the dripping rain lid and ultrasonic mist generator inside the completed enclosure."
+      ],
+      "domain": "science_nature",
+      "topic": "rain terrarium build",
+      "educational_value": "moderate",
+      "educational_reasoning": "Demonstrates practical vivarium engineering steps including drainage layers, root rot prevention, and microclimate humidity management.",
+      "what_child_may_learn": [
+        "How false bottoms and drainage cells prevent stagnant water from rotting plant roots.",
+        "How to arrange hardscape elements like driftwood and rocks to support epiphytic plants and moss.",
+        "How humidity, rain, and mist can be mechanically simulated in an indoor habitat."
+      ],
+      "age_suitability": "all_ages",
+      "safety_flags": [
+        "none"
+      ],
+      "safety_note": "",
+      "parent_flag": "ok",
+      "conversation_starter": "How do you think the plants survive in that glass box without needing someone to water them every single day?",
+      "follow_up_idea": "Build a simple closed jar terrarium together using small pebbles, activated charcoal, potting soil, and moss gathered from a garden or park.",
+      "surface_topic": "Rain terrarium build",
+      "underlying_draw": "Satisfying, step-by-step transformation of bare glass into a lush, automated miniature ecosystem.",
+      "concepts": [
+        "false bottom drainage",
+        "substrate layering",
+        "vivarium hardscaping",
+        "microclimate humidity",
+        "moss cultivation"
+      ],
+      "modality": "procedural",
+      "vocabulary_band": "age_9_11",
+      "affect": "calm, methodical",
+      "latent_skill": "botany and terrarium landscaping",
+      "transferable": true,
+      "evidence": "The entire video is an unhurried, step-by-step demonstration focusing on tactile assembly, from gluing pump chambers to placing individual moss patches."
+    }
+  },
+  {
+    "video_id": "0xidTMA9EbQ",
+    "url": "https://www.youtube.com/watch?v=0xidTMA9EbQ",
+    "title": "DIY Mini Terrarium Setup in a Small Jar! \ud83c\udf3f",
+    "channel": "MadeByKM | Aquarium & Terrarium DIY",
+    "liked_at": "2026-10-17T03:50:05Z",
+    "analysis": {
+      "summary": "A creator builds a miniature enclosed terrarium inside a small glass jar step by step. They layer river sand, white sand, and terrarium soil before arranging lava rocks, sheet moss, African clubmoss, and Fittonia using tweezers. After adding decorative sand around the front and watering with a pipette, they place a clear glass lid on top.",
+      "key_points": [
+        "Layering drainage substrates including river sand, white sand, and terrarium soil.",
+        "Arranging hardscape lava rocks and small plants using long tweezers.",
+        "Misting the plants with a pipette and sealing the finished mini ecosystem with a glass lid."
+      ],
+      "domain": "science_nature",
+      "topic": "miniature terrarium",
+      "educational_value": "moderate",
+      "educational_reasoning": "The video clearly identifies specific plant species and shows the proper order of substrate layering for a functional jar terrarium.",
+      "what_child_may_learn": [
+        "The basic layering process required to set up a closed terrarium.",
+        "Names of moisture-loving plants suitable for terrariums, such as Fittonia and African clubmoss.",
+        "Techniques for handling delicate plants in small spaces using precision tools."
+      ],
+      "age_suitability": "all_ages",
+      "safety_flags": [
+        "none"
+      ],
+      "safety_note": "",
+      "parent_flag": "ok",
+      "conversation_starter": "What kind of tiny landscape or miniature decorations would you design if you made a jar garden?",
+      "follow_up_idea": "Find an empty glass jar at home and gather gravel, soil, and small moss patches or weeds from the garden to create a DIY mini terrarium.",
+      "surface_topic": "building a jar terrarium",
+      "underlying_draw": "The soothing satisfaction of assembling a tiny, meticulously detailed living world inside a miniature container.",
+      "concepts": [
+        "substrate layering",
+        "drainage",
+        "closed terrarium ecosystem",
+        "precision planting",
+        "hardscape design"
+      ],
+      "modality": "procedural",
+      "vocabulary_band": "age_9_11",
+      "affect": "calm, methodical",
+      "latent_skill": "gardening and botanical crafts",
+      "transferable": true,
+      "evidence": "The creator uses fine-tipped tweezers to carefully anchor delicate moss clumps and a small Fittonia stem into the soil behind a lava rock."
+    }
+  }
+]

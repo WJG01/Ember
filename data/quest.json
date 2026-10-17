@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-10-17T12:10:04.656806+00:00",
+  "model": "gemini-3.8-flash",
+  "child_age": null,
+  "quest": {
+    "title": "Build a Mini Closed Jar Terrarium",
+    "theme_name": "Building miniature living worlds",
+    "why_this": "Your child watched creators meticulously layer substrate and delicately plant moss inside glass tanks and tiny jars. This project lets them apply those exact micro-landscaping techniques to make their own living, self-contained ecosystem.",
+    "duration_minutes": 60,
+    "cost": "free",
+    "materials": [
+      "Clean clear glass jar with a tight lid",
+      "Small pebbles or coarse gravel",
+      "Potting soil or rich garden dirt",
+      "Small wild moss patches, tiny ferns, or small weeds",
+      "Tweezers or chopsticks",
+      "Spray bottle or small spoon with water"
+    ],
+    "steps": [
+      "Scout the backyard or neighborhood for small patches of moss, tiny sprouted plants, and decorative pebbles.",
+      "Add a one-inch layer of small pebbles to the bottom of the jar to serve as the drainage chamber.",
+      "Layer one to two inches of soil gently over the gravel base.",
+      "Use tweezers or chopsticks to carefully landscape the moss, plants, and accent stones inside the jar.",
+      "Lightly mist the plants with water until the soil is damp but not soaked, then seal the lid."
+    ],
+    "child_role": "Designing the miniature landscape, arranging each piece of moss with tweezers, and misting the initial rain cycle.",
+    "parent_role": "Providing the jar, helping collect natural materials, and ensuring moisture levels are balanced before sealing.",
+    "conversation_prompt": "How do you think the water inside will cycle between the soil, moss, and lid once it stays sealed?",
+    "success_looks_like": "A sealed jar with visible drainage and soil layers holding neatly arranged green moss, displaying light condensation on the glass within a day.",
+    "safety_note": "Handle glass containers carefully and wash hands thoroughly after handling outdoor soil and moss.",
+    "based_on_video_ids": [
+      "4Qb6_zVYcik",
+      "0xidTMA9EbQ"
+    ]
+  }
+}

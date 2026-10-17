@@ -1,0 +1,28 @@
+{
+  "parent_summary": "Your child is drawn to calm, methodical videos showing the step-by-step creation of miniature living habitats. These videos offer solid educational value, introducing real concepts of botany, drainage, and closed micro-ecosystems alongside hands-on craftsmanship. With only two videos viewed close together, it is a focused spark of interest that is well worth exploring offline.",
+  "themes": [
+    {
+      "name": "Building miniature living worlds",
+      "insight": "Your child is fascinated by the careful, step-by-step process of turning small glass containers into self-sustaining natural habitats.",
+      "reasoning": "Both videos center on the unhurried, tactile assembly of living mini-ecosystems using precision tools and layered substrates.",
+      "video_ids": [
+        "4Qb6_zVYcik",
+        "0xidTMA9EbQ"
+      ],
+      "evidence": [
+        "Placing tiny moss patches and small plants into jars with fine-tipped tweezers.",
+        "Methodically building up functional layers like drainage bottoms and automated misting systems."
+      ],
+      "confidence": "low",
+      "trajectory": "unclear",
+      "transferability": "high",
+      "growth_direction": "This could easily turn into hands-on gardening, caring for houseplants, or building simple closed jar terrariums at home.",
+      "video_count": 2,
+      "id": "t1"
+    }
+  ],
+  "unassigned_video_ids": [],
+  "generated_at": "2026-10-17T12:09:53.900354+00:00",
+  "model": "gemini-3.8-flash",
+  "child_age": null
+}
