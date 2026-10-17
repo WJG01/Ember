@@ -1,6 +1,9 @@
 fastapi
 uvicorn
+pydantic
 google-genai
+google-cloud-datastore
+google-cloud-secret-manager
+google-auth
 google-auth-oauthlib
 google-api-python-client
-google-cloud-datastore
