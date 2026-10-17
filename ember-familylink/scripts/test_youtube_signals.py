@@ -25,21 +25,52 @@ Output is written to data/ember_signals.json
 import json
 import os
 import sys
+from pathlib import Path
 
-from google_auth_oauthlib.flow import InstalledAppFlow
+# Google Cloud & API Imports
+from google.cloud import datastore
+from google.auth.transport.requests import Request
+from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
+# 1. Initialize Datastore Client targeted at the "ember" database
+db = datastore.Client(database="ember")
+
 SCOPES = ["https://www.googleapis.com/auth/youtube.readonly"]
-CLIENT_SECRET = "client_secret.json"
-OUTFILE = "data/ember_signals.json"
 
+def authenticate_production():
+    """
+    Retrieves OAuth credentials from Datastore, auto-refreshes them if expired,
+    and returns a production-ready authenticated YouTube service client object.
+    """
+    # Fetch the token payload saved by the FastAPI web application
+    token_key = db.key("UserCredential", "youtube_sync_token")
+    token_entity = db.get(token_key)
+    
+    if not token_entity:
+        print("Error: No YouTube credentials found in Datastore. Run the web login flow first.")
+        return None
 
-def authenticate():
-    if not os.path.exists(CLIENT_SECRET):
-        sys.exit(f"Missing {CLIENT_SECRET}. See SETUP in the docstring.")
-    flow = InstalledAppFlow.from_client_secrets_file(CLIENT_SECRET, SCOPES)
-    creds = flow.run_local_server(port=8080, open_browser=False)
+    # Reconstruct the Credentials object from the database fields
+    creds = Credentials(
+        token=token_entity.get("token"),
+        refresh_token=token_entity.get("refresh_token"),
+        token_uri=token_entity.get("token_uri"),
+        client_id=token_entity.get("client_id"),
+        client_secret=token_entity.get("client_secret"),
+        scopes=token_entity.get("scopes")
+    )
+
+    # Automatically refresh the access token in the background using the long-term refresh token
+    if creds and creds.expired and creds.refresh_token:
+        print("YouTube access token expired. Refreshing token automatically...")
+        creds.refresh(Request())
+        
+        # Save the updated token back to Datastore immediately
+        token_entity["token"] = creds.token
+        db.put(token_entity)
+
     return build("youtube", "v3", credentials=creds)
 
 
@@ -48,12 +79,11 @@ def get_channel(yt):
     resp = yt.channels().list(part="contentDetails,snippet", mine=True).execute()
     items = resp.get("items", [])
     if not items:
-        sys.exit(
-            "No channel on this account.\n"
-            "The likes playlist only exists once the account has a YouTube channel.\n"
-            "Go to youtube.com on the test account, create a channel, re-like the "
-            "videos, then run this again."
+        print(
+            "No channel found on this account.\n"
+            "The likes playlist only exists once the account has a YouTube channel."
         )
+        return None
     ch = items[0]
     return {
         "channel_id": ch["id"],
@@ -88,7 +118,6 @@ def get_likes(yt, playlist_id):
             "video_id": i["contentDetails"]["videoId"],
             "title": i["snippet"]["title"],
             "channel": i["snippet"].get("videoOwnerChannelTitle"),
-            # when it was ADDED to the likes playlist == when it was liked
             "liked_at": i["snippet"].get("publishedAt"),
             "url": f"https://www.youtube.com/watch?v={i['contentDetails']['videoId']}",
         }
@@ -114,9 +143,15 @@ def get_subscriptions(yt):
 
 
 def main():
-    yt = authenticate()
+    # 2. Use the new non-interactive authentication system
+    yt = authenticate_production()
+    if not yt:
+        sys.exit("Pipeline execution halted: Unauthenticated.")
 
     ch = get_channel(yt)
+    if not ch:
+        sys.exit("Pipeline execution halted: Missing channel structure.")
+
     print(f"\nAccount: {ch['title']}")
     print(f"Channel: {ch['channel_id']}")
 
@@ -136,7 +171,7 @@ def main():
 
     subs = get_subscriptions(yt)
 
-    # ---- verdict -------------------------------------------------------
+    # ---- verdict logs (will be written to Cloud Logging) ----------------
     print("\n" + "=" * 58)
     print(f"  liked videos returned : {len(likes)}")
     print(f"  subscriptions returned: {len(subs)}")
@@ -145,7 +180,6 @@ def main():
     if likes:
         has_ts = sum(1 for v in likes if v["liked_at"])
         print(f"\n  timestamps present on {has_ts}/{len(likes)} likes")
-        print("  (if yes, you get recency for free - feed it to the graph)\n")
         for v in likes[:10]:
             print(f"   - {v['title'][:60]}")
             print(f"     {v['channel']}  {v['liked_at']}")
@@ -155,15 +189,19 @@ def main():
         for s in subs:
             print(f"   - {s['title']}")
 
-    print("\nCompare against what you actually liked and subscribed to.")
-    print("A mismatch matters more than the absolute number.\n")
-
-    with open(OUTFILE, "w") as f:
-        json.dump(
-            {"channel": ch, "likes": likes, "subscriptions": subs}, f, indent=2
-        )
-    print(f"Written to {OUTFILE}")
-    print("Hand the URLs in that file to whoever is running Gate 0.\n")
+    # 3. FIX: Replace local file open with Datastore entity creation
+    signal_key = db.key("EmberSignal", "latest_pipeline_run")
+    signal_entity = datastore.Entity(key=signal_key)
+    
+    # Store data directly as an entity payload instead of writing to disk
+    signal_entity.update({
+        "channel": ch,
+        "likes": likes,
+        "subscriptions": subs
+    })
+    db.put(signal_entity)
+    
+    print("\nPipeline execution complete. Results saved cleanly to Datastore entity 'latest_pipeline_run'.")
 
 
 if __name__ == "__main__":

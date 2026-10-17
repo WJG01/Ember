@@ -35,31 +35,58 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+from pathlib import Path
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
+from google.cloud import datastore
+from google_auth_oauthlib.flow import Flow
+
 
 BASE = Path(__file__).resolve().parent.parent
-DATA = BASE / "data"            # runtime results; the pipeline scripts run with this as cwd
+
+# Cloud Run file systems are ephemeral. Use /tmp for runtime results if necessary,
+# but ideally, switch token.json and ember_signals.json saving/loading to Datastore.
+DATA = Path("/tmp/data")
 PIPELINE = BASE / "pipeline"
 DEMO_DIR = BASE / "demo_data"
 STATIC = BASE / "static"
+DATA.mkdir(exist_ok=True, parents=True)
 DATA.mkdir(exist_ok=True)
 
 SCOPES = ["https://www.googleapis.com/auth/youtube.readonly"]
-CLIENT_SECRET = Path(os.environ.get("EMBER_CLIENT_SECRET", BASE / "client_secret.json"))
+
+# 1. Initialize Datastore Client for production state & token persistence
+db = datastore.Client(database="ember")
+
+
+# 2. In production, load the client secret string from Secret Manager instead of a local file
+# Fallback to local path for local development
+CLIENT_SECRET = Path(os.environ.get("EMBER_CLIENT_SECRET", "client_secret.json"))
 TOKEN_FILE = DATA / "token.json"
 SIGNALS = DATA / "ember_signals.json"
 
-REDIRECT_URI = os.environ.get("EMBER_REDIRECT_URI", "http://localhost:8080/auth/callback")
+# 3. Dynamic Redirect URI for Google OAuth
+# Cloud Run automatically sets your service URL or custom domain.
+# Make sure to add this production URL to your Google Cloud Console OAuth Authorized Redirect URIs!
+REDIRECT_URI = os.environ.get("EMBER_REDIRECT_URI")
+if not REDIRECT_URI:
+    # If not set via env var, you can dynamically build it from the incoming request inside your auth route
+    REDIRECT_URI = "http://localhost:8080/auth/callback"
+
 DEMO_FORCED = os.environ.get("EMBER_DEMO") == "1"
 CHILD_NAME = os.environ.get("EMBER_CHILD_NAME")
 _age = os.environ.get("EMBER_CHILD_AGE", "")
 DEFAULT_AGE = int(_age) if _age.isdigit() else None
 
-if REDIRECT_URI.startswith("http://"):
-    os.environ.setdefault("OAUTHLIB_INSECURE_TRANSPORT", "1")  # local development only
+# 4. Strictly allow insecure transport ONLY if running locally
+if REDIRECT_URI.startswith("http://localhost"):
+    os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
+else:
+    # Cloud Run handles HTTPS encryption automatically, but python-oauthlib needs to know it's secure
+    os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "0"
+
 os.environ.setdefault("OAUTHLIB_RELAX_TOKEN_SCOPE", "1")
 
 DOMAIN_LABELS = {
@@ -113,7 +140,6 @@ _pending_verifiers = {}  # state -> PKCE code_verifier
 
 
 def _flow(state=None):
-    from google_auth_oauthlib.flow import Flow
     return Flow.from_client_secrets_file(
         str(CLIENT_SECRET), scopes=SCOPES, redirect_uri=REDIRECT_URI, state=state
     )
@@ -123,33 +149,57 @@ def _flow(state=None):
 def auth_start():
     if not CLIENT_SECRET.exists():
         return RedirectResponse("/?auth_error=missing_client_secret")
+    
     flow = _flow()
     url, state = flow.authorization_url(
-        access_type="offline",            # refresh token, so weekly syncs keep working
-        prompt="consent select_account",  # always show the account picker
+        access_type="offline",           # Required to get the refresh token
+        prompt="consent select_account"  # Ensures the refresh token is generated every time
     )
-    _pending_verifiers[state] = flow.code_verifier
+    
+    # 3. FIX: Save the verifier to Datastore instead of local memory (_pending_verifiers)
+    # This prevents errors when Cloud Run instances scale or switch tasks
+    state_key = db.key("PendingState", state)
+    state_entity = datastore.Entity(key=state_key)
+    state_entity["code_verifier"] = flow.code_verifier
+    db.put(state_entity)
+    
     return RedirectResponse(url)
 
-
 @app.get("/auth/callback")
-def auth_callback(request: Request):
-    params = request.query_params
-    if params.get("error"):
-        return RedirectResponse("/?auth_error=" + urllib.parse.quote(params["error"]))
-    state = params.get("state")
-    if not state or state not in _pending_verifiers:
-        return RedirectResponse("/?auth_error=expired_session")
-    try:
-        flow = _flow(state=state)
-        flow.code_verifier = _pending_verifiers.pop(state)
-        # Rebuild the URL from the configured redirect URI so it also works behind a proxy.
-        flow.fetch_token(authorization_response=REDIRECT_URI + "?" + request.url.query)
-        TOKEN_FILE.write_text(flow.credentials.to_json(), encoding="utf-8")
-    except Exception as e:  # noqa: BLE001
-        print("auth callback failed:", e)
-        return RedirectResponse("/?auth_error=token_exchange_failed")
-    return RedirectResponse("/?connected=1")
+def auth_callback(request: Request, code: str, state: str):
+    # 4. Retrieve the verifier from Datastore using the unique state string
+    state_key = db.key("PendingState", state)
+    state_entity = db.get(state_key)
+    
+    if not state_entity:
+        raise HTTPException(status_code=400, detail="Invalid or expired session state.")
+    
+    # Build the flow using the verified state information
+    flow = _flow(state=state)
+    flow.code_verifier = state_entity["code_verifier"]
+    
+    # Clean up the pending state token from the database immediately after use
+    db.delete(state_key)
+    
+    # Exchange the short-lived authorization code for long-term API access tokens
+    flow.fetch_token(authorization_response=str(request.url))
+    credentials = flow.credentials
+    
+    # 5. FIX: Save the credentials directly into Datastore instead of writing a local JSON file
+    token_key = db.key("UserCredential", "youtube_sync_token")
+    token_entity = datastore.Entity(key=token_key)
+    token_entity.update({
+        "token": credentials.token,
+        "refresh_token": credentials.refresh_token,
+        "token_uri": credentials.token_uri,
+        "client_id": credentials.client_id,
+        "client_secret": credentials.client_secret,
+        "scopes": credentials.scopes
+    })
+    db.put(token_entity)
+    
+    # Login complete! Redirect the user back to the application dashboard or home page
+    return RedirectResponse("/?auth=success")
 
 
 @app.post("/api/disconnect")
@@ -178,7 +228,8 @@ def fetch_signals():
     from googleapiclient.errors import HttpError
 
     if not TOKEN_FILE.exists():
-        raise PipelineError("YouTube is not connected yet. Use Connect YouTube first.")
+        raise PipelineError(
+            "YouTube is not connected yet. Use Connect YouTube first.")
     creds = Credentials.from_authorized_user_file(str(TOKEN_FILE), SCOPES)
     yt = build("youtube", "v3", credentials=creds, cache_discovery=False)
 
@@ -193,7 +244,8 @@ def fetch_signals():
         channel = items[0]
         likes_id = channel["contentDetails"]["relatedPlaylists"].get("likes")
         if not likes_id:
-            raise PipelineError("No likes playlist was returned for this account.")
+            raise PipelineError(
+                "No likes playlist was returned for this account.")
 
         def likes_req(token):
             return yt.playlistItems().list(part="snippet,contentDetails", playlistId=likes_id,
@@ -230,12 +282,14 @@ def fetch_signals():
                 "Use a standard Google account for the child, or add video links by hand."
             )
         if "invalid_grant" in text or e.resp.status == 401:
-            raise PipelineError("The YouTube connection expired. Use Connect YouTube again.")
+            raise PipelineError(
+                "The YouTube connection expired. Use Connect YouTube again.")
         raise PipelineError(f"YouTube returned an error: {text[:200]}")
 
     # keep guardian-saved videos; replace the YouTube likes with the fresh read
     existing = read_json(SIGNALS, {}) or {}
-    saved = [v for v in existing.get("likes", []) if v.get("source") == "guardian_save"]
+    saved = [v for v in existing.get(
+        "likes", []) if v.get("source") == "guardian_save"]
     merged = {v["video_id"]: v for v in likes}
     for v in saved:
         merged.setdefault(v["video_id"], v)
@@ -271,7 +325,8 @@ def add_video(body: VideoIn):
     elif re.fullmatch(r"[A-Za-z0-9_-]{11}", text):
         vid = text
     else:
-        raise HTTPException(400, "That does not look like a YouTube link. Paste the full video address.")
+        raise HTTPException(
+            400, "That does not look like a YouTube link. Paste the full video address.")
     url = f"https://www.youtube.com/watch?v={vid}"
 
     title, channel = url, None
@@ -283,14 +338,16 @@ def add_video(body: VideoIn):
     except Exception:  # noqa: BLE001 - offline or blocked: fall back to the URL as title
         pass
 
-    sig = read_json(SIGNALS, None) or {"channel": {}, "likes": [], "subscriptions": []}
+    sig = read_json(SIGNALS, None) or {
+        "channel": {}, "likes": [], "subscriptions": []}
     if any(v["video_id"] == vid for v in sig["likes"]):
         return {"ok": True, "duplicate": True, "title": title}
     sig["likes"].append({
         "video_id": vid, "title": title, "channel": channel,
         "liked_at": datetime.now(timezone.utc).isoformat(), "url": url, "source": "guardian_save",
     })
-    SIGNALS.write_text(json.dumps(sig, indent=2, ensure_ascii=False), encoding="utf-8")
+    SIGNALS.write_text(json.dumps(
+        sig, indent=2, ensure_ascii=False), encoding="utf-8")
     return {"ok": True, "duplicate": False, "title": title}
 
 
@@ -320,11 +377,13 @@ def _log(line):
         del _state["log"][:-80]
         m = _PROGRESS.match(line)
         if m:
-            _state["progress"] = {"done": int(m.group(1)), "total": int(m.group(2))}
+            _state["progress"] = {"done": int(
+                m.group(1)), "total": int(m.group(2))}
 
 
 def _run_script(script, age):
-    cmd = [sys.executable, str(PIPELINE / script)] + (["--age", str(age)] if age else [])
+    cmd = [sys.executable, str(PIPELINE / script)] + \
+        (["--age", str(age)] if age else [])
     env = {**os.environ, "PYTHONIOENCODING": "utf-8", "PYTHONUNBUFFERED": "1"}
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
                          text=True, encoding="utf-8", errors="replace", env=env, cwd=DATA)
@@ -340,14 +399,16 @@ def _run_script(script, age):
 
 def _pipeline(sync, age):
     try:
-        labels = (["Reading liked videos"] if sync else []) + [label for label, _ in STEPS]
+        labels = (["Reading liked videos"] if sync else []) + \
+            [label for label, _ in STEPS]
         _set(labels=labels, step_index=0, progress=None, log=[], error=None)
         if sync:
             n = fetch_signals()
             _log(f"read {n} videos from YouTube")
             _set(step_index=1)
         elif not SIGNALS.exists():
-            raise PipelineError("No videos yet. Connect YouTube or add a video link first.")
+            raise PipelineError(
+                "No videos yet. Connect YouTube or add a video link first.")
         offset = 1 if sync else 0
         for i, (_label, script) in enumerate(STEPS):
             _set(step_index=offset + i, progress=None)
@@ -370,8 +431,10 @@ def _start(sync, age):
     with _lock:
         if _state["running"]:
             raise HTTPException(409, "An analysis is already running.")
-        _state.update(running=True, error=None, log=[], progress=None, step_index=0)
-    threading.Thread(target=_pipeline, args=(sync, age or DEFAULT_AGE), daemon=True).start()
+        _state.update(running=True, error=None, log=[],
+                      progress=None, step_index=0)
+    threading.Thread(target=_pipeline, args=(
+        sync, age or DEFAULT_AGE), daemon=True).start()
     return {"started": True}
 
 
@@ -408,7 +471,8 @@ def report():
     themes = read_json(d / "themes.json", None)
     quest = read_json(d / "quest.json", None)
     signals = read_json(d / "ember_signals.json", {}) or {}
-    sources = {x.get("video_id"): x.get("source") for x in signals.get("likes", [])}
+    sources = {x.get("video_id"): x.get("source")
+               for x in signals.get("likes", [])}
 
     videos = []
     for r in records:
@@ -452,7 +516,8 @@ def report():
                        key=lambda v: order[v["parent_flag"]])
 
     channel_title = (signals.get("channel") or {}).get("title")
-    child = CHILD_NAME or ("Llamie" if demo else None) or channel_title or "your child"
+    child = CHILD_NAME or (
+        "Llamie" if demo else None) or channel_title or "your child"
 
     return {
         "demo": demo,
@@ -481,8 +546,9 @@ async def unhandled(_request: Request, exc: Exception):
     return JSONResponse(status_code=500, content={"detail": f"{type(exc).__name__}: {exc}"})
 
 
-# static files last, so the API routes above win
-app.mount("/", StaticFiles(directory=str(STATIC), html=True), name="static")
+# 5. Mount your static HTML/JS folder so it is served by FastAPI
+if STATIC.exists():
+    app.mount("/static", StaticFiles(directory=str(STATIC)), name="static")
 
 
 if __name__ == "__main__":
