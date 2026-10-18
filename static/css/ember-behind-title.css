@@ -1,0 +1,8 @@
+/* ember-behind-title.css: Behind the title tab (what the title says vs what holds attention). */
+
+.vs { padding: 4px 16px; }
+.vs-row { display: grid; grid-template-columns: minmax(0, 36%) minmax(0, 1fr); gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--outline); font-size: 14px; line-height: 20px; }
+.vs-row.head { color: var(--muted); font-size: 12px; font-weight: 500; padding: 12px 0 8px; }
+.vs-row:last-child { border-bottom: 0; }
+.vs-row span:first-child { color: var(--text-2); }
+.vs-more { width: 100%; margin-top: 4px; justify-content: center; display: inline-flex; align-items: center; gap: 4px; }

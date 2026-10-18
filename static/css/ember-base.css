@@ -1,0 +1,82 @@
+/* ember-base.css: what every Ember section shares. Page layout, section tabs, cards,
+   banners, the connection card, progress, chips, pills and empty states. */
+
+#emberBody { display: flex; flex-direction: column; gap: 20px; min-width: 0; overflow-wrap: anywhere; }
+#emberBody > * { min-width: 0; }
+.stack-v { display: grid; gap: 20px; min-width: 0; }
+.live-stack { display: grid; gap: 12px; }
+
+.card { background: var(--surface); border-radius: 24px; padding: 16px; }
+.muted { color: var(--text-2); }
+.small { font-size: 13px; line-height: 18px; }
+.empty { text-align: center; color: var(--text-2); padding: 24px 16px; font-size: 14px; line-height: 21px; }
+.footnote { font-size: 12px; line-height: 17px; color: var(--muted); padding: 0 4px 8px; }
+
+.banner { display: flex; gap: 12px; align-items: flex-start; background: #162634; color: var(--on-selected); border-radius: 20px; padding: 14px 16px; font-size: 14px; line-height: 20px; }
+.banner .ic { width: 20px; height: 20px; margin-top: 1px; color: var(--primary); }
+.banner.error { background: #3b1f1d; color: #ffdad6; }
+.banner.error .ic { color: var(--error); }
+
+/* connection card: status row, then the actions */
+.conn { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; font-size: 14px; color: var(--text); }
+.conn-text { flex: 1; min-width: 0; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); flex: none; }
+.dot.on { background: var(--ok); }
+.conn .text-btn { height: 32px; padding: 0 12px; font-size: 13px; margin-left: auto; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.btn {
+  min-height: 40px; padding: 0 18px; border-radius: 20px; border: 1px solid var(--outline);
+  background: transparent; color: var(--primary); font-size: 14px; font-weight: 500;
+}
+.btn.primary { background: var(--selected); border-color: var(--selected); color: var(--on-selected); }
+.btn:disabled { opacity: .5; cursor: default; }
+
+/* analysis progress */
+.progress h3 { font-size: 16px; font-weight: 500; margin-bottom: 12px; }
+.bar { height: 6px; border-radius: 3px; background: var(--surface-hi); overflow: hidden; }
+.bar > i { display: block; height: 100%; background: var(--primary); border-radius: 3px; transition: width .3s; }
+.bar.indeterminate > i { width: 35%; animation: slide 1.2s ease-in-out infinite; }
+@keyframes slide { from { transform: translateX(-100%); } to { transform: translateX(300%); } }
+.steps { margin-top: 14px; display: grid; gap: 6px; font-size: 14px; color: var(--muted); }
+.steps li { display: flex; align-items: center; gap: 10px; }
+.steps li.done { color: var(--text-2); }
+.steps li.now { color: var(--text); }
+.steps .ic { width: 18px; height: 18px; }
+.steps .pending { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--outline); }
+.steps .running { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--primary); border-top-color: transparent; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* section tabs: a 3 x 2 grid, so nothing ever scrolls sideways */
+.tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.tab {
+  min-height: 44px; padding: 6px 8px; border-radius: 14px; border: 1px solid var(--outline);
+  background: transparent; color: var(--text-2); font-size: 13px; font-weight: 500; line-height: 16px;
+  text-align: center; overflow-wrap: normal;
+}
+.tab[aria-selected="true"] { background: var(--tonal); border-color: var(--tonal); color: var(--on-tonal); }
+
+/* section heading under the tabs */
+.sec-head { margin: 4px 4px 16px; }
+.sec-head h2 { font-size: 22px; line-height: 28px; font-weight: 400; }
+.sec-desc { margin-top: 4px; font-size: 14px; line-height: 20px; color: var(--text-2); }
+.sub-h { font-size: 16px; line-height: 24px; font-weight: 500; margin: 0 4px 10px; }
+
+/* chips wrap onto more lines instead of running off the screen */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; }
+.chip {
+  max-width: 100%; min-height: 36px; padding: 6px 12px; border-radius: 12px; border: 1px solid var(--outline);
+  background: transparent; color: var(--text-2); font-size: 13px; line-height: 18px; font-weight: 500;
+  display: inline-flex; align-items: center; gap: 8px; text-align: left;
+}
+.chip[aria-pressed="true"] { background: var(--tonal); border-color: var(--tonal); color: var(--on-tonal); }
+.chip .swatch { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+.chip .n { color: var(--muted); }
+.chip[aria-pressed="true"] .n { color: var(--on-tonal); }
+
+.pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill { font-size: 12px; line-height: 16px; padding: 4px 10px; border-radius: 12px; border: 1px solid var(--outline); color: var(--text-2); }
+
+details summary { list-style: none; cursor: pointer; font-size: 13px; color: var(--primary); display: inline-flex; align-items: center; gap: 4px; }
+details summary::-webkit-details-marker { display: none; }
+details summary .ic { width: 18px; height: 18px; transition: transform .15s; }
+details[open] summary .ic { transform: rotate(180deg); }

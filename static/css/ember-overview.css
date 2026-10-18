@@ -1,0 +1,24 @@
+/* ember-overview.css: Overview tab (summary, headline numbers, worth a look). */
+
+.summary { font-size: 21px; line-height: 30px; letter-spacing: -.1px; padding: 0 4px; }
+.summary-meta { font-size: 13px; line-height: 18px; color: var(--muted); padding: 8px 4px 0; }
+
+.kpis { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.kpi { background: var(--surface); border-radius: 20px; padding: 14px 16px; }
+.kpi b { display: block; font-size: 32px; line-height: 40px; font-weight: 500; }
+.kpi span { font-size: 13px; color: var(--text-2); }
+.kpi.alert b { color: var(--error); }
+
+.good-note { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--text-2); }
+.good-note .ic { width: 20px; height: 20px; color: var(--ok); }
+
+.look { display: grid; gap: 0; padding: 4px 16px; }
+.look-item { padding: 14px 0; border-bottom: 1px solid var(--outline); display: grid; gap: 6px; }
+.look-item:last-child { border-bottom: 0; }
+.look-flag { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; }
+.look-flag .ic { width: 18px; height: 18px; }
+.look-flag.review { color: var(--error); }
+.look-flag.note { color: var(--warn); }
+.look-title { font-size: 16px; line-height: 22px; }
+.look p { font-size: 14px; line-height: 20px; color: var(--text-2); }
+.look p b { color: var(--text); font-weight: 500; }

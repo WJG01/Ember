@@ -7,7 +7,14 @@
   <meta name="theme-color" content="#101318">
   <meta name="color-scheme" content="dark">
   <title>Family Link</title>
-  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/style.css?v=2">
+  <link rel="stylesheet" href="/static/css/ember-base.css?v=2">
+  <link rel="stylesheet" href="/static/css/ember-overview.css?v=2">
+  <link rel="stylesheet" href="/static/css/ember-quest.css?v=2">
+  <link rel="stylesheet" href="/static/css/ember-interests.css?v=2">
+  <link rel="stylesheet" href="/static/css/ember-behind-title.css?v=2">
+  <link rel="stylesheet" href="/static/css/ember-watch-mix.css?v=2">
+  <link rel="stylesheet" href="/static/css/ember-videos.css?v=2">
 </head>
 
 <body>
@@ -27,9 +34,6 @@
     <symbol id="i-pin" viewBox="0 0 24 24">
       <path
         d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" />
-    </symbol>
-    <symbol id="i-space" viewBox="0 0 24 24">
-      <path d="M4 4h7v7H4zm9 0h7v7h-7zM4 13h7v7H4zm9 0h7v7h-7z" />
     </symbol>
     <symbol id="i-back" viewBox="0 0 24 24">
       <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z" />
@@ -111,15 +115,6 @@
       </div>
     </header>
 
-    <!-- Ember sub-page bar -->
-    <header class="appbar" id="emberBar" hidden>
-      <button class="icon-btn" id="emberBack" type="button" aria-label="Back"><svg class="ic">
-          <use href="#i-back" />
-        </svg></button>
-      <h1>Ember</h1>
-      <span class="appbar-sub" data-child-name>Llamie</span>
-    </header>
-
     <main id="main">
 
       <!-- Screen time (static, as in Family Link) -->
@@ -163,15 +158,7 @@
         </div>
       </section>
 
-      <!-- Space: where integrations live -->
-      <section class="screen" id="screen-space" aria-label="Space" hidden>
-        <h2 class="page-title">Space</h2>
-        <p class="page-sub">Connect other services to see more of what <span data-child-name>Llamie</span> enjoys.</p>
-        <h3 class="list-heading">Integrations</h3>
-        <div class="list-card" id="integrationList"></div>
-      </section>
-
-      <!-- Ember: the integration module -->
+      <!-- Ember: the bottom-bar tab. Its sections are drawn by static/js/ember/*.js -->
       <section class="screen" id="screen-ember" aria-label="Ember" hidden>
         <div id="emberBody"></div>
       </section>
@@ -194,10 +181,10 @@
             <use href="#i-pin" />
           </svg></span><span>Location</span>
       </button>
-      <button class="nav-item" type="button" data-nav="space">
+      <button class="nav-item" type="button" data-nav="ember">
         <span class="nav-pill"><svg class="ic">
-            <use href="#i-space" />
-          </svg></span><span>Space</span>
+            <use href="#i-flame" />
+          </svg></span><span>Ember</span>
       </button>
     </nav>
 
@@ -260,7 +247,17 @@
   <!-- Filled by the Print this card button -->
   <div id="printRoot" aria-hidden="true"></div>
 
-  <script src="/static/app.js"></script>
+  <script src="/static/js/core.js?v=2"></script>
+  <script src="/static/js/shell.js?v=2"></script>
+  <script src="/static/js/ember/live.js?v=2"></script>
+  <script src="/static/js/ember/page.js?v=2"></script>
+  <script src="/static/js/ember/overview.js?v=2"></script>
+  <script src="/static/js/ember/quest.js?v=2"></script>
+  <script src="/static/js/ember/interests.js?v=2"></script>
+  <script src="/static/js/ember/behind-title.js?v=2"></script>
+  <script src="/static/js/ember/watch-mix.js?v=2"></script>
+  <script src="/static/js/ember/videos.js?v=2"></script>
+  <script src="/static/app.js?v=2"></script>
 </body>
 
 </html>

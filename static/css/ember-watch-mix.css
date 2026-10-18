@@ -1,0 +1,17 @@
+/* ember-watch-mix.css: Watch mix tab (subject bars and the learning-value stack). */
+
+.chart-title { font-size: 15px; font-weight: 500; margin-bottom: 14px; }
+.rows { display: grid; gap: 12px; }
+.row-label { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; margin-bottom: 4px; }
+.row-label b { font-weight: 500; }
+.track { height: 10px; border-radius: 5px; background: var(--surface-hi); overflow: hidden; }
+.track > i { display: block; height: 100%; border-radius: 5px; background: #4d8fdb; }
+.stack { display: flex; gap: 2px; height: 28px; border-radius: 8px; overflow: hidden; margin-bottom: 14px; }
+.stack > i { display: block; }
+.legend { display: grid; gap: 8px; font-size: 14px; }
+.legend li { display: flex; align-items: center; gap: 10px; }
+.legend .sw { width: 12px; height: 12px; border-radius: 3px; }
+.legend b { margin-left: auto; font-weight: 500; }
+.note { margin-top: 12px; font-size: 12px; line-height: 17px; color: var(--muted); }
+.edu-high { background: #7fb2ff; } .edu-moderate { background: #4d8fdb; }
+.edu-low { background: #2f6aa8; } .edu-none { background: #3a4a5f; }

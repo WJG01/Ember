@@ -1,5 +1,5 @@
-/* Family Link look: dark Material 3 surfaces, pill buttons, 28px cards.
-   Colours were sampled from the Family Link screenshots. */
+/* style.css: the Family Link frame (tokens, phone column, top bar, Screen time card,
+   bottom bar, drawer, dialog, snackbar). Ember's own styles are in /static/css/. */
 :root {
   --bg: #101318;
   --surface: #1c1f24;
@@ -98,20 +98,6 @@ ul, ol { padding: 0; list-style: none; }
   display: grid; place-items: center; font-size: 24px; color: #e8eaff;
 }
 
-.appbar {
-  flex: none;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 8px 16px 8px 4px;
-  padding-top: calc(8px + env(safe-area-inset-top, 0px));
-  min-height: 64px;
-}
-.appbar h1 { font-size: 22px; font-weight: 400; line-height: 28px; }
-.appbar-sub {
-  margin-left: auto; font-size: 14px; color: var(--text-2);
-  background: #1e1f24; padding: 4px 12px; border-radius: 12px;
-}
 
 /* ---------- main scroll area ---------- */
 #main { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
@@ -133,26 +119,6 @@ ul, ol { padding: 0; list-style: none; }
   display: inline-flex; align-items: center; justify-content: center; gap: 12px;
   font-size: 18px; font-weight: 500;
 }
-
-/* Space */
-.page-title { font-size: 28px; line-height: 36px; font-weight: 400; margin: 8px 8px 4px; }
-.page-sub { color: var(--text-2); font-size: 15px; margin: 0 8px 24px; }
-.list-heading { font-size: 14px; font-weight: 500; color: var(--primary); margin: 0 8px 8px; }
-.list-card { background: var(--surface); border-radius: 28px; padding: 8px; }
-.list-row {
-  width: 100%; display: flex; align-items: center; gap: 16px; text-align: left;
-  padding: 14px 16px; border: 0; border-radius: 20px; background: transparent; color: var(--text);
-}
-.list-row:active { background: var(--surface-hi); }
-.list-icon {
-  width: 48px; height: 48px; border-radius: 50%; flex: none;
-  display: grid; place-items: center; background: #3a2418; color: #ffb59a;
-}
-.list-text { flex: 1; min-width: 0; }
-.list-title { font-size: 17px; line-height: 24px; }
-.list-desc { font-size: 14px; line-height: 20px; color: var(--text-2); }
-.list-state { font-size: 12px; color: var(--primary); margin-top: 4px; }
-.list-row > .ic { color: var(--muted); }
 
 /* ---------- bottom navigation ---------- */
 .navbar {
@@ -217,191 +183,6 @@ ul, ol { padding: 0; list-style: none; }
   position: absolute; left: 16px; right: 16px; bottom: calc(100px + env(safe-area-inset-bottom, 0px)); z-index: 40;
   background: #e2e2e9; color: #1b1c20; padding: 14px 16px; border-radius: 12px;
   font-size: 15px; line-height: 20px; box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
-}
-
-/* ---------- Ember module ---------- */
-#emberBody { display: flex; flex-direction: column; gap: 28px; }
-.e-section > h2 { font-size: 20px; line-height: 28px; font-weight: 400; margin: 0 4px 12px; }
-.card { background: var(--surface); border-radius: 24px; padding: 16px; }
-.muted { color: var(--text-2); }
-.small { font-size: 13px; line-height: 18px; }
-
-.banner { display: flex; gap: 12px; align-items: flex-start; background: #162634; color: var(--on-selected); border-radius: 20px; padding: 14px 16px; font-size: 14px; line-height: 20px; }
-.banner .ic { width: 20px; height: 20px; margin-top: 1px; color: var(--primary); }
-.banner.error { background: #3b1f1d; color: #ffdad6; }
-.banner.error .ic { color: var(--error); }
-
-.actions { display: flex; flex-wrap: wrap; gap: 8px; }
-.btn {
-  height: 40px; padding: 0 18px; border-radius: 20px; border: 1px solid var(--outline);
-  background: transparent; color: var(--primary); font-size: 14px; font-weight: 500;
-}
-.btn.primary { background: var(--selected); border-color: var(--selected); color: var(--on-selected); }
-.btn:disabled { opacity: .5; cursor: default; }
-.conn { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 13px; color: var(--text-2); }
-.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); flex: none; }
-.dot.on { background: var(--ok); }
-.conn .text-btn { height: 28px; padding: 0 8px; font-size: 13px; margin-left: auto; }
-
-.summary { font-size: 21px; line-height: 30px; letter-spacing: -.1px; padding: 0 4px; }
-.summary-meta { font-size: 13px; line-height: 18px; color: var(--muted); padding: 8px 4px 0; }
-
-.kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-.kpi { background: var(--surface); border-radius: 20px; padding: 14px 16px; }
-.kpi b { display: block; font-size: 32px; line-height: 40px; font-weight: 500; }
-.kpi span { font-size: 13px; color: var(--text-2); }
-.kpi.alert b { color: var(--error); }
-
-.progress h3 { font-size: 16px; font-weight: 500; margin-bottom: 12px; }
-.bar { height: 6px; border-radius: 3px; background: var(--surface-hi); overflow: hidden; }
-.bar > i { display: block; height: 100%; background: var(--primary); border-radius: 3px; transition: width .3s; }
-.bar.indeterminate > i { width: 35%; animation: slide 1.2s ease-in-out infinite; }
-@keyframes slide { from { transform: translateX(-100%); } to { transform: translateX(300%); } }
-.steps { margin-top: 14px; display: grid; gap: 6px; font-size: 14px; color: var(--muted); }
-.steps li { display: flex; align-items: center; gap: 10px; }
-.steps li.done { color: var(--text-2); }
-.steps li.now { color: var(--text); }
-.steps .ic { width: 18px; height: 18px; }
-.steps .pending { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--outline); }
-.steps .running { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--primary); border-top-color: transparent; animation: spin .8s linear infinite; }
-@keyframes spin { to { transform: rotate(360deg); } }
-
-/* quest card (dark in app, light on paper) */
-.quest {
-  --q-bg: #2a1f1a; --q-text: #f5e4da; --q-muted: #cdb3a5; --q-line: #5a4338;
-  --q-accent: #ff9b73; --q-stub: #7a2e12; --q-stub-text: #ffdbcf; --q-num: #ffdbcf; --q-num-bg: #5b2a16;
-  background: var(--q-bg); color: var(--q-text); border-radius: 24px; overflow: hidden;
-}
-.quest-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; background: var(--q-stub); color: var(--q-stub-text); padding: 12px 20px; font-size: 14px; }
-.quest-head b { font-size: 16px; font-weight: 600; }
-.quest-meta { display: flex; flex-direction: column; text-align: right; line-height: 1.25; }
-.quest-meta span { font-size: 13px; }
-.quest-body { padding: 20px; display: grid; gap: 18px; }
-.quest h3 { font-size: 24px; line-height: 30px; font-weight: 500; }
-.quest .grows { font-size: 13px; color: var(--q-muted); margin-top: 2px; }
-.quest p { font-size: 15px; line-height: 22px; }
-.quest h4 { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
-.quest ul.need li { position: relative; padding-left: 16px; font-size: 15px; line-height: 22px; }
-.quest ul.need li::before { content: ""; position: absolute; left: 2px; top: 9px; width: 6px; height: 6px; border-radius: 50%; background: var(--q-accent); }
-.quest ol.how { display: grid; gap: 10px; counter-reset: s; }
-.quest ol.how li { position: relative; padding-left: 36px; font-size: 15px; line-height: 22px; counter-increment: s; }
-.quest ol.how li::before {
-  content: counter(s); position: absolute; left: 0; top: 0; width: 24px; height: 24px; border-radius: 50%;
-  background: var(--q-num-bg); color: var(--q-num); display: grid; place-items: center; font-size: 13px; font-weight: 600;
-}
-.quest .split { display: grid; gap: 14px; border-top: 1px dashed var(--q-line); padding-top: 16px; }
-.quest .key b { font-weight: 600; }
-.quest .safe { font-size: 13px; color: var(--q-muted); }
-.quest-foot { padding: 0 20px 20px; display: grid; gap: 8px; }
-.quest-foot .btn { justify-self: start; display: inline-flex; align-items: center; gap: 8px; color: #ffdbcf; border-color: #7a5545; }
-.quest-foot .ic { width: 18px; height: 18px; }
-.quest-foot span { font-size: 12px; color: var(--q-muted); }
-
-/* attention list */
-.look { display: grid; gap: 0; padding: 4px 16px; }
-.look-item { padding: 14px 0; border-bottom: 1px solid var(--outline); display: grid; gap: 6px; }
-.look-item:last-child { border-bottom: 0; }
-.look-flag { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; }
-.look-flag .ic { width: 18px; height: 18px; }
-.look-flag.review { color: var(--error); }
-.look-flag.note { color: var(--warn); }
-.look-title { font-size: 16px; line-height: 22px; }
-.look p { font-size: 14px; line-height: 20px; color: var(--text-2); }
-.look p b { color: var(--text); font-weight: 500; }
-
-/* themes and graph */
-.chips { display: flex; gap: 8px; overflow-x: auto; padding: 0 0 4px; margin: 0 -16px 12px; padding-inline: 16px; scrollbar-width: none; }
-.chips::-webkit-scrollbar { display: none; }
-.chip {
-  flex: none; height: 32px; padding: 0 12px; border-radius: 8px; border: 1px solid var(--outline);
-  background: transparent; color: var(--text-2); font-size: 13px; font-weight: 500;
-  display: inline-flex; align-items: center; gap: 8px; white-space: nowrap;
-}
-.chip[aria-pressed="true"] { background: var(--tonal); border-color: var(--tonal); color: var(--on-tonal); }
-.chip .swatch { width: 8px; height: 8px; border-radius: 50%; }
-.chip .n { color: var(--muted); }
-.chip[aria-pressed="true"] .n { color: var(--on-tonal); }
-
-.graph { background: var(--surface); border-radius: 24px; padding: 12px 4px; }
-.graph svg { display: block; width: 100%; height: auto; }
-.g-group { cursor: pointer; transition: opacity .2s; }
-.g-group.dim { opacity: .4; }
-.g-label { font: 600 11.5px var(--font); fill: var(--text); }
-.g-leaf { font: 400 11px var(--font); fill: var(--text-2); }
-.g-count { font: 600 12px var(--font); fill: #10131a; text-anchor: middle; }
-.g-none { font: 400 11px var(--font); fill: var(--muted); text-anchor: end; }
-
-.theme { margin-top: 20px; display: grid; gap: 14px; }
-.theme h3 { font-size: 22px; line-height: 28px; font-weight: 500; }
-.theme .lead { font-size: 16px; line-height: 24px; }
-.pills { display: flex; flex-wrap: wrap; gap: 6px; }
-.pill { font-size: 12px; line-height: 16px; padding: 4px 10px; border-radius: 12px; border: 1px solid var(--outline); color: var(--text-2); }
-.theme h4 { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
-.theme li.b { position: relative; padding-left: 14px; font-size: 14px; line-height: 21px; color: var(--text-2); }
-.theme li.b::before { content: ""; position: absolute; left: 1px; top: 8px; width: 5px; height: 5px; border-radius: 50%; background: var(--c, var(--primary)); }
-.theme p { font-size: 14px; line-height: 21px; color: var(--text-2); }
-.theme .links li { font-size: 14px; line-height: 22px; }
-.theme a, .video a { color: var(--primary); }
-
-/* titles vs attention */
-.vs { padding: 4px 16px; }
-.vs-row { display: grid; grid-template-columns: 36% 1fr; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--outline); font-size: 14px; line-height: 20px; }
-.vs-row.head { color: var(--muted); font-size: 12px; font-weight: 500; padding: 12px 0 8px; }
-.vs-row:last-child { border-bottom: 0; }
-.vs-row span:first-child { color: var(--text-2); }
-.vs-more { width: 100%; margin-top: 4px; justify-content: center; display: inline-flex; align-items: center; gap: 4px; }
-
-/* charts */
-.chart-title { font-size: 15px; font-weight: 500; margin-bottom: 14px; }
-.rows { display: grid; gap: 12px; }
-.row-label { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 4px; }
-.row-label b { font-weight: 500; }
-.track { height: 10px; border-radius: 5px; background: var(--surface-hi); overflow: hidden; }
-.track > i { display: block; height: 100%; border-radius: 5px; background: #4d8fdb; }
-.stack { display: flex; gap: 2px; height: 28px; border-radius: 8px; overflow: hidden; margin-bottom: 14px; }
-.stack > i { display: block; }
-.legend { display: grid; gap: 8px; font-size: 14px; }
-.legend li { display: flex; align-items: center; gap: 10px; }
-.legend .sw { width: 12px; height: 12px; border-radius: 3px; }
-.legend b { margin-left: auto; font-weight: 500; }
-.note { margin-top: 12px; font-size: 12px; line-height: 17px; color: var(--muted); }
-.edu-high { background: #7fb2ff; } .edu-moderate { background: #4d8fdb; }
-.edu-low { background: #2f6aa8; } .edu-none { background: #3a4a5f; }
-
-/* videos */
-.video { padding: 16px 0; border-bottom: 1px solid var(--outline); display: grid; gap: 10px; }
-.video:last-child { border-bottom: 0; }
-.video-top { display: flex; gap: 12px; }
-.thumb { width: 112px; height: 63px; border-radius: 10px; flex: none; background: var(--surface-hi); object-fit: cover; display: grid; place-items: center; font-size: 22px; color: var(--muted); }
-.video h3 { font-size: 15px; line-height: 20px; font-weight: 500; }
-.video .meta { font-size: 12px; line-height: 16px; color: var(--muted); margin-top: 4px; }
-.video .sum { font-size: 14px; line-height: 21px; color: var(--text-2); }
-.flag-pill { border-color: #7a3b36; color: var(--error); }
-.flag-pill.note { border-color: #6d5a1f; color: var(--warn); }
-details summary { list-style: none; cursor: pointer; font-size: 13px; color: var(--primary); display: inline-flex; align-items: center; gap: 4px; }
-details summary::-webkit-details-marker { display: none; }
-details summary .ic { width: 18px; height: 18px; transition: transform .15s; }
-details[open] summary .ic { transform: rotate(180deg); }
-.detail { margin-top: 10px; display: grid; gap: 12px; font-size: 14px; line-height: 21px; color: var(--text-2); }
-.detail h4 { font-size: 13px; font-weight: 600; color: var(--text); }
-.detail li { position: relative; padding-left: 14px; }
-.detail li::before { content: ""; position: absolute; left: 1px; top: 8px; width: 5px; height: 5px; border-radius: 50%; background: var(--primary); }
-.empty { text-align: center; color: var(--text-2); padding: 24px 8px; font-size: 14px; }
-.footnote { font-size: 12px; line-height: 17px; color: var(--muted); padding: 0 4px 8px; }
-
-/* ---------- print: only the quest card ---------- */
-#printRoot { display: none; }
-@media print {
-  @page { margin: 12mm; }
-  html, body { background: #fff !important; }
-  body.printing .phone { display: none !important; }
-  body.printing #printRoot { display: block; }
-  #printRoot .quest {
-    --q-bg: #fff6e9; --q-text: #3a1d10; --q-muted: #6b4a3b; --q-line: #b79a88;
-    --q-accent: #c8380f; --q-stub: #c8380f; --q-stub-text: #fff; --q-num: #fff; --q-num-bg: #3a1d10;
-    border: 2px solid #3a1d10; border-radius: 16px; font-family: var(--font);
-    -webkit-print-color-adjust: exact; print-color-adjust: exact; break-inside: avoid;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

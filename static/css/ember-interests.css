@@ -1,0 +1,20 @@
+/* ember-interests.css: Interests tab (theme graph and theme detail). Chips live in ember-base.css. */
+
+.graph { background: var(--surface); border-radius: 24px; padding: 12px 4px; }
+.graph svg { display: block; width: 100%; height: auto; }
+.g-group { cursor: pointer; transition: opacity .2s; }
+.g-group.dim { opacity: .4; }
+.g-label { font: 600 11.5px var(--font); fill: var(--text); }
+.g-leaf { font: 400 11px var(--font); fill: var(--text-2); }
+.g-count { font: 600 12px var(--font); fill: #10131a; text-anchor: middle; }
+.g-none { font: 400 11px var(--font); fill: var(--muted); text-anchor: end; }
+
+.theme { margin-top: 20px; display: grid; gap: 14px; }
+.theme h3 { font-size: 22px; line-height: 28px; font-weight: 500; }
+.theme .lead { font-size: 16px; line-height: 24px; }
+.theme h4 { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+.theme li.b { position: relative; padding-left: 14px; font-size: 14px; line-height: 21px; color: var(--text-2); }
+.theme li.b::before { content: ""; position: absolute; left: 1px; top: 8px; width: 5px; height: 5px; border-radius: 50%; background: var(--c, var(--primary)); }
+.theme p { font-size: 14px; line-height: 21px; color: var(--text-2); }
+.theme .links li { font-size: 14px; line-height: 22px; }
+.theme a { color: var(--primary); }

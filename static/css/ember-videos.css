@@ -1,0 +1,18 @@
+/* ember-videos.css: Videos tab (video cards). Filter chips live in ember-base.css. */
+
+.video-list { padding-top: 0; padding-bottom: 0; }
+.video { padding: 16px 0; border-bottom: 1px solid var(--outline); display: grid; gap: 10px; }
+.video:last-child { border-bottom: 0; }
+.video-top { display: flex; gap: 12px; }
+.video-head { min-width: 0; }
+.thumb { width: 112px; height: 63px; border-radius: 10px; flex: none; background: var(--surface-hi); object-fit: cover; display: grid; place-items: center; font-size: 22px; color: var(--muted); }
+.video h3 { font-size: 15px; line-height: 20px; font-weight: 500; }
+.video .meta { font-size: 12px; line-height: 16px; color: var(--muted); margin-top: 4px; }
+.video .sum { font-size: 14px; line-height: 21px; color: var(--text-2); }
+.video a { color: var(--primary); }
+.flag-pill { border-color: #7a3b36; color: var(--error); }
+.flag-pill.note { border-color: #6d5a1f; color: var(--warn); }
+.detail { margin-top: 10px; display: grid; gap: 12px; font-size: 14px; line-height: 21px; color: var(--text-2); }
+.detail h4 { font-size: 13px; font-weight: 600; color: var(--text); }
+.detail li { position: relative; padding-left: 14px; }
+.detail li::before { content: ""; position: absolute; left: 1px; top: 8px; width: 5px; height: 5px; border-radius: 50%; background: var(--primary); }

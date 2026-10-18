@@ -1,0 +1,46 @@
+/* ember-quest.css: Weekend quest tab, and the print rules that print only the card. */
+
+.quest {
+  --q-bg: #2a1f1a; --q-text: #f5e4da; --q-muted: #cdb3a5; --q-line: #5a4338;
+  --q-accent: #ff9b73; --q-stub: #7a2e12; --q-stub-text: #ffdbcf; --q-num: #ffdbcf; --q-num-bg: #5b2a16;
+  background: var(--q-bg); color: var(--q-text); border-radius: 24px; overflow: hidden;
+}
+.quest-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; background: var(--q-stub); color: var(--q-stub-text); padding: 12px 20px; font-size: 14px; }
+.quest-head b { font-size: 16px; font-weight: 600; }
+.quest-meta { display: flex; flex-direction: column; text-align: right; line-height: 1.25; }
+.quest-meta span { font-size: 13px; }
+.quest-body { padding: 20px; display: grid; gap: 18px; }
+.quest h3 { font-size: 24px; line-height: 30px; font-weight: 500; }
+.quest .grows { font-size: 13px; color: var(--q-muted); margin-top: 2px; }
+.quest p { font-size: 15px; line-height: 22px; }
+.quest h4 { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+.quest ul.need li { position: relative; padding-left: 16px; font-size: 15px; line-height: 22px; }
+.quest ul.need li::before { content: ""; position: absolute; left: 2px; top: 9px; width: 6px; height: 6px; border-radius: 50%; background: var(--q-accent); }
+.quest ol.how { display: grid; gap: 10px; counter-reset: s; }
+.quest ol.how li { position: relative; padding-left: 36px; font-size: 15px; line-height: 22px; counter-increment: s; }
+.quest ol.how li::before {
+  content: counter(s); position: absolute; left: 0; top: 0; width: 24px; height: 24px; border-radius: 50%;
+  background: var(--q-num-bg); color: var(--q-num); display: grid; place-items: center; font-size: 13px; font-weight: 600;
+}
+.quest .split { display: grid; gap: 14px; border-top: 1px dashed var(--q-line); padding-top: 16px; }
+.quest .key b { font-weight: 600; }
+.quest .safe { font-size: 13px; color: var(--q-muted); }
+.quest-foot { padding: 0 20px 20px; display: grid; gap: 8px; }
+.quest-foot .btn { justify-self: start; display: inline-flex; align-items: center; gap: 8px; color: #ffdbcf; border-color: #7a5545; }
+.quest-foot .ic { width: 18px; height: 18px; }
+.quest-foot span { font-size: 12px; color: var(--q-muted); }
+
+/* print: only the quest card, in light colours */
+#printRoot { display: none; }
+@media print {
+  @page { margin: 12mm; }
+  html, body { background: #fff !important; }
+  body.printing .phone { display: none !important; }
+  body.printing #printRoot { display: block; }
+  #printRoot .quest {
+    --q-bg: #fff6e9; --q-text: #3a1d10; --q-muted: #6b4a3b; --q-line: #b79a88;
+    --q-accent: #c8380f; --q-stub: #c8380f; --q-stub-text: #fff; --q-num: #fff; --q-num-bg: #3a1d10;
+    border: 2px solid #3a1d10; border-radius: 16px; font-family: var(--font);
+    -webkit-print-color-adjust: exact; print-color-adjust: exact; break-inside: avoid;
+  }
+}
