@@ -46,7 +46,7 @@ Notes
 - YouTube does not let apps read **supervised (Family Link) accounts**; the child needs a
   standard Google account with a YouTube channel. Otherwise use **Add a video link**.
 - Testing-mode tokens expire after 7 days: reconnect the day before a demo.
-- If `gemini-3.8-flash` is rejected, run `python scripts/diagnose.py` and change `MODEL`
+- If gemini-3.8-flash is rejected, run python scripts/diagnose.py, then set GEMINI_MODEL on the service.
   in `pipeline/content_sense.py`.
 - The dashboard says "liked videos", not "watched": the API has no watch history.
 - **Print this card** prints only the quest card.

@@ -1,0 +1,2773 @@
+[
+  {
+    "httpRequest": {
+      "latency": "0.030893536s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddf2000c4b14b0c24257",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:30.983121915Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "0ad432265b7f4f05",
+    "timestamp": "2026-10-17T20:43:30.773015Z",
+    "trace": "projects/ember-511816/traces/a4184f63598ded6ea092dd4e76bc8090"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.033790776s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddf2000b60995dca0bfe",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:30.983121915Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "3892e85c7ba0005f",
+    "timestamp": "2026-10-17T20:43:30.710045Z",
+    "trace": "projects/ember-511816/traces/30776d1e8cbd31f2a092dd4e76bc886b"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.026373555s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddf100045b109e3d7e9b",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:29.317909564Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "ea3f75b1a70a9cad",
+    "timestamp": "2026-10-17T20:43:29.257451Z",
+    "trace": "projects/ember-511816/traces/18f417d48d6f39fcb8d9bc778fbdb038"
+  },
+  {
+    "insertId": "6ad3ddef000c3b28c2ec13ba",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:27.985410483Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:59618 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:27.801576Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.031492434s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddef000c3e79236b01fe",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:27.989034585Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "d5e01d006699faf0",
+    "timestamp": "2026-10-17T20:43:27.769104Z",
+    "trace": "projects/ember-511816/traces/2c4d6725e1d1234fb8d9bc778fbdbcb2"
+  },
+  {
+    "insertId": "6ad3ddef000b5f14c5dbb00d",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:27.985410483Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:59604 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:27.745236Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.036902903s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddef000b6294d88d83fc",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:27.989034585Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "889ee82e92e06e00",
+    "timestamp": "2026-10-17T20:43:27.707362Z",
+    "trace": "projects/ember-511816/traces/98e707db3ceed79ab8d9bc778fbdbfc9"
+  },
+  {
+    "insertId": "6ad3ddee000b9da759551791",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:26.986670695Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:59592 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:26.761255Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.033399805s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddee000ba109674d08d0",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:26.986960618Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "a9219e0d440edda1",
+    "timestamp": "2026-10-17T20:43:26.726616Z",
+    "trace": "projects/ember-511816/traces/efb6d3bd1807ab98b8d9bc778fbdb669"
+  },
+  {
+    "insertId": "6ad3ddee0004ff49e3689f02",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:26.653275947Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:59578 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:26.327497Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.036389934s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddee000502abbe7b2799",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:26.661379605Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "ec3eed8270348f5b",
+    "timestamp": "2026-10-17T20:43:26.290344Z",
+    "trace": "projects/ember-511816/traces/9d9d7599bfbb8e50b8d9bc778fbdbb7d"
+  },
+  {
+    "insertId": "6ad3ddec000c596d972042df",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:24.990031610Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:59572 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:24.809325Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.028653986s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddec000c5dc140b405f9",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:24.991450326Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "de3b458caec7a25e",
+    "timestamp": "2026-10-17T20:43:24.779726Z",
+    "trace": "projects/ember-511816/traces/88ac866d1a13337fb8d9bc778fbdb5de"
+  },
+  {
+    "insertId": "6ad3ddec000b767a4a96a11b",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:24.990031610Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:59570 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:24.751226Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.043031195s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddec000b7a30f0b961a3",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:24.991450326Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "cfad435389f7ecbe",
+    "timestamp": "2026-10-17T20:43:24.707498Z",
+    "trace": "projects/ember-511816/traces/44b890f506b81657b8d9bc778fbdb813"
+  },
+  {
+    "insertId": "6ad3ddeb000ba9a69ab9329f",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:23.988882562Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:59562 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:23.764326Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.055755903s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddeb000bad35b08355b8",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:23.992090615Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "95c91acaa84aec83",
+    "timestamp": "2026-10-17T20:43:23.707301Z",
+    "trace": "projects/ember-511816/traces/0f1763f5c3d1132fb8d9bc778fbdbc46"
+  },
+  {
+    "insertId": "6ad3ddeb0004970ab5be3bcd",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:23.325728085Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:59550 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:23.300810Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.043296667s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddeb00049a02666fd7d8",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:23.326570441Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "cbbe707a01e6d3e8",
+    "timestamp": "2026-10-17T20:43:23.256512Z",
+    "trace": "projects/ember-511816/traces/c36b0749eaece174b8d9bc778fbdb15a",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad3dde9000c537f5bdefbe7",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:21.992981340Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:19642 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:21.807807Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.046174426s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "707",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3dde9000c574be0da0f07",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:21.994835775Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "01bcde26ac48a9f1",
+    "timestamp": "2026-10-17T20:43:21.761033Z",
+    "trace": "projects/ember-511816/traces/b2adcfbe694eb837b8d9bc778fbdb5e2"
+  },
+  {
+    "insertId": "6ad3dde9000b4266b018ce9f",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:21.992981340Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:19636 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:21.737894Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.028682018s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3dde9000b45d12207b697",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:21.994835775Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "cbba64b389a36b09",
+    "timestamp": "2026-10-17T20:43:21.708422Z",
+    "trace": "projects/ember-511816/traces/be0649a275629e89b8d9bc778fbdb653"
+  },
+  {
+    "insertId": "6ad3dde8000b3d0eb53785f7",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:20.993160156Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:19620 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:20.736526Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.029731946s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3dde8000b4051f36746aa",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:20.992411024Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "6a842f8aef6b1c3d",
+    "timestamp": "2026-10-17T20:43:20.705930Z",
+    "trace": "projects/ember-511816/traces/3396fd26d0ce3694b8d9bc778fbdb4ad"
+  },
+  {
+    "insertId": "6ad3dde8000498f27a5a0ecf",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:20.328804840Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:19616 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:20.301298Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.039081795s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3dde800049c7206e8a3de",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:20.326225364Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "80615fc9159cbb45",
+    "timestamp": "2026-10-17T20:43:20.261108Z",
+    "trace": "projects/ember-511816/traces/4d92da9233a8d956b8d9bc778fbdba16"
+  },
+  {
+    "insertId": "6ad3dde6000c0acc951164e9",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:18.994437837Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:19608 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:18.789196Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.027554814s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3dde6000c0e75a6d44b40",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:18.995069619Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "bfb60c753ea4517a",
+    "timestamp": "2026-10-17T20:43:18.760957Z",
+    "trace": "projects/ember-511816/traces/035c882d5a985161b8d9bc778fbdbac2"
+  },
+  {
+    "insertId": "6ad3dde6000b42cc3ead3246",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:18.994437837Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:19602 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:18.737996Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.027954484s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3dde6000b458fe73798e9",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:18.995069619Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "147556ac50314cfb",
+    "timestamp": "2026-10-17T20:43:18.708811Z",
+    "trace": "projects/ember-511816/traces/e45d9ea360e1163ab8d9bc778fbdbf9d"
+  },
+  {
+    "insertId": "6ad3dde5000b6b82b4ea3b50",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:17.994938297Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:19596 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:17.748418Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.039257321s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3dde5000b6ef673f02397",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:17.996812876Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "1b046b7afe1f0f2f",
+    "timestamp": "2026-10-17T20:43:17.708015Z",
+    "trace": "projects/ember-511816/traces/42f2ea7a80a60d73b8d9bc778fbdbdbe"
+  },
+  {
+    "insertId": "6ad3dde5000499d71fa0dd27",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:17.331336458Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:19582 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:17.301527Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.044915190s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "646",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3dde500049d8a2e5daf15",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:17.333883882Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "cc8e34425b9d45d4",
+    "timestamp": "2026-10-17T20:43:17.255627Z",
+    "trace": "projects/ember-511816/traces/688f2d81dc1461d6b8d9bc778fbdbcf9"
+  },
+  {
+    "insertId": "6ad3dde3000c02759469f4e0",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:15.998967261Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:19580 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:15.787061Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.026798785s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3dde3000c057e689653c5",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:15.997285908Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "7ebac4bc0443d91c",
+    "timestamp": "2026-10-17T20:43:15.759368Z",
+    "trace": "projects/ember-511816/traces/bb09feeed16e42d9b8d9bc778fbdb804"
+  },
+  {
+    "insertId": "6ad3dde3000b39f547925244",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:15.998967261Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:19564 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:15.735733Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.026804386s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3dde3000b3d0981a6ed3c",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:15.997285908Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "36e52a192121f694",
+    "timestamp": "2026-10-17T20:43:15.707302Z",
+    "trace": "projects/ember-511816/traces/8a15f95a207e06aab8d9bc778fbdb067"
+  },
+  {
+    "insertId": "6ad3dde2000b3bc29f2885c4",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:14.998638298Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:19560 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:14.736194Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.029588079s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3dde2000b3e6aa23fd3c2",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:14.999386153Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "20572e97d67c87b6",
+    "timestamp": "2026-10-17T20:43:14.705431Z",
+    "trace": "projects/ember-511816/traces/0d111179f033165db8d9bc778fbdb2d6"
+  },
+  {
+    "insertId": "6ad3dde200049d2be9894569",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:14.335245864Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:19554 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:14.302379Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.041872429s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3dde20004a0a34360bb2d",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:14.335340261Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "d75ac1b3f984ee72",
+    "timestamp": "2026-10-17T20:43:14.259172Z",
+    "trace": "projects/ember-511816/traces/06cbf933f82a232eb8d9bc778fbdb9ae"
+  },
+  {
+    "insertId": "6ad3dde0000b9575c82923a3",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:13.002381639Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:19550 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:12.759157Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.040690418s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3dde0000b98ff272bff12",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:13.000329792Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "55dee49f4b2be0aa",
+    "timestamp": "2026-10-17T20:43:12.717128Z",
+    "trace": "projects/ember-511816/traces/5c5f476f7bd3f242b8d9bc778fbdb67d",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad3ddd5000bbecb6d26a754",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:02.012011506Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:55726 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:43:01.769739Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.028933085s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddd5000bc26e703b812c",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:02.010693156Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "8f238d1b951624aa",
+    "timestamp": "2026-10-17T20:43:01.740057Z",
+    "trace": "projects/ember-511816/traces/a227d08257b9832feb1177037b59135d",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad3ddd3000b534c7a430b52",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:43:00.013275538Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:55712 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:59.742220Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.031723910s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddd3000b5626d2a22062",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:43:00.013023001Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "efa37e3804be985d",
+    "timestamp": "2026-10-17T20:42:59.709605Z",
+    "trace": "projects/ember-511816/traces/a22bc4f65ea5fa38eb1177037b5917aa"
+  },
+  {
+    "insertId": "6ad3ddd2000b47ba806522f4",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:59.014044509Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:55710 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:58.739258Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.031676820s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddd2000b4c2b3495182e",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:59.016281680Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "512086ba6319f927",
+    "timestamp": "2026-10-17T20:42:58.706570Z",
+    "trace": "projects/ember-511816/traces/59b27edcee7a0a1deb1177037b5916a4"
+  },
+  {
+    "insertId": "6ad3ddd0000b506762bbc3af",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:57.016053001Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:55696 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:56.741479Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.029569238s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddd0000b54613464d0f8",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:57.019887295Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "ea11887a7831662c",
+    "timestamp": "2026-10-17T20:42:56.710899Z",
+    "trace": "projects/ember-511816/traces/c643897c7fcd789beb1177037b5912b1"
+  },
+  {
+    "insertId": "6ad3ddcf000b4ca6cd4b4e39",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:56.018300334Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:55688 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:55.740518Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.029508061s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddcf000b4f5d5ebfff81",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:56.019209687Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "54db8527bf641dd2",
+    "timestamp": "2026-10-17T20:42:55.709596Z",
+    "trace": "projects/ember-511816/traces/aea0f7fa38b9b780eb1177037b591fbe"
+  },
+  {
+    "insertId": "6ad3ddcd000b4750e013a9a4",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:54.019624355Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:55682 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:53.739152Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.028894630s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddcd000b4af62b2b83f0",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:54.022496852Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "742e9975ebf408f7",
+    "timestamp": "2026-10-17T20:42:53.709378Z",
+    "trace": "projects/ember-511816/traces/13d5444421ab7103eb1177037b591a15"
+  },
+  {
+    "insertId": "6ad3ddcc000b3dbd3933d87d",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:53.021314837Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:55672 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:52.736701Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.029292030s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddcc000b415728e2b7e0",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:53.019715287Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "a78301d4af29e189",
+    "timestamp": "2026-10-17T20:42:52.706607Z",
+    "trace": "projects/ember-511816/traces/f8344a1294e664c1eb1177037b59141d"
+  },
+  {
+    "insertId": "6ad3ddca000b5a4c6c38f20c",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:51.023633722Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:47468 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:50.744012Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.027209235s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddca000b5cc2b05dc580",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:51.024338366Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "cb15b0206577c467",
+    "timestamp": "2026-10-17T20:42:50.715470Z",
+    "trace": "projects/ember-511816/traces/da3a1e392d705374eb1177037b591683"
+  },
+  {
+    "insertId": "6ad3ddc9000b48e0e6cc55ff",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:50.024440440Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:47460 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:49.739552Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.028717573s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddc9000b4c0faa2bafa4",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:50.025032259Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "0f91b4e6059517c6",
+    "timestamp": "2026-10-17T20:42:49.709974Z",
+    "trace": "projects/ember-511816/traces/c4cfc2a4856f979984b0420f8a61aa62",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad3ddc7000b5cf19470d88b",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:48.023807413Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:47446 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:47.744689Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.030328269s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddc7000b60572bc973a5",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:48.023919314Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "15f64c48a43c5c16",
+    "timestamp": "2026-10-17T20:42:47.713348Z",
+    "trace": "projects/ember-511816/traces/acdc1720830575c684b0420f8a61a4a1"
+  },
+  {
+    "insertId": "6ad3ddc6000b5a573986d73f",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:47.024659967Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:47434 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:46.744023Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.030781449s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddc6000b5dac191780cd",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:47.024055125Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "df580c630a68f697",
+    "timestamp": "2026-10-17T20:42:46.712462Z",
+    "trace": "projects/ember-511816/traces/c6deccab007e1f7384b0420f8a61ab28"
+  },
+  {
+    "insertId": "6ad3ddc4000b4fe1018882f7",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:45.028452927Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:47432 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:44.741345Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.027876167s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddc4000b53a73fbfb9b2",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:45.030262099Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "c2431a905d1a6701",
+    "timestamp": "2026-10-17T20:42:44.712731Z",
+    "trace": "projects/ember-511816/traces/217c15b7a3bc12de84b0420f8a61ac95"
+  },
+  {
+    "insertId": "6ad3ddc3000b3d524c04b950",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:44.030277650Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:47422 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:43.736594Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.027105767s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddc3000b409bae756f9c",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:44.029047582Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "c0ca4a12b6b4fbbb",
+    "timestamp": "2026-10-17T20:42:43.708290Z",
+    "trace": "projects/ember-511816/traces/48c0465914a6673784b0420f8a61a86e"
+  },
+  {
+    "insertId": "6ad3ddc1000b3bf5f87c3c40",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:42.033263960Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:40862 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:41.736245Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.027406429s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddc1000b3f6a73ec9d7d",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:42.030562258Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "45ec9f8bee82d5a1",
+    "timestamp": "2026-10-17T20:42:41.708069Z",
+    "trace": "projects/ember-511816/traces/8908afbfb4ec5acc84b0420f8a61af28"
+  },
+  {
+    "insertId": "6ad3ddc0000b6e57b1655619",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:41.032159958Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:40858 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:40.749143Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.029931900s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddc0000b71cef57f2a82",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:41.030548015Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "2237d111161ca178",
+    "timestamp": "2026-10-17T20:42:40.718095Z",
+    "trace": "projects/ember-511816/traces/106a92276a5e48b584b0420f8a61a28a"
+  },
+  {
+    "insertId": "6ad3ddbe000b3eeee36fb9a5",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:39.032841557Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:40854 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:38.737006Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.024678270s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddbe000b4269a9012b8b",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:39.032436999Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "cb492724efc73051",
+    "timestamp": "2026-10-17T20:42:38.711578Z",
+    "trace": "projects/ember-511816/traces/e2c07238a18d8ec584b0420f8a61ab2f",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad3ddbd000b3ee1cc57be60",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:38.033571599Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:40850 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:37.736993Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.029944359s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "707",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "612",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddbd000b4203e6490c7b",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:38.035712358Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "7746ae556ad99160",
+    "timestamp": "2026-10-17T20:42:37.706230Z",
+    "trace": "projects/ember-511816/traces/367a25339391d54f84b0420f8a61afd0"
+  },
+  {
+    "insertId": "6ad3ddbb000b373e369441dc",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:36.034362953Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:40834 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:35.735038Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.027917338s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "578",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddbb000b3a9e76eb3cab",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:36.036684329Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "e6c0d1fdf1b12e96",
+    "timestamp": "2026-10-17T20:42:35.705907Z",
+    "trace": "projects/ember-511816/traces/ea1309f1e61c892c84b0420f8a61a226"
+  },
+  {
+    "insertId": "6ad3ddba000b5b627c56ed18",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:35.036882200Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:40820 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:34.744290Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.034530558s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "578",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddba000b5f4656047c4f",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:35.038078803Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "686d1b58a7bee598",
+    "timestamp": "2026-10-17T20:42:34.708990Z",
+    "trace": "projects/ember-511816/traces/8b3e7a0d0bebeeec84b0420f8a61ae46"
+  },
+  {
+    "insertId": "6ad3ddb8000c0bb0a832a1c6",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:33.041925109Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:40810 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:32.789424Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.028522430s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "578",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddb8000c0ee88b1082f2",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:33.042354736Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "6bfbcaad6dd2887b",
+    "timestamp": "2026-10-17T20:42:32.759854Z",
+    "trace": "projects/ember-511816/traces/0577b10ed6b6f65984b0420f8a61ae6f"
+  },
+  {
+    "insertId": "6ad3ddb7000bc820dae31ffd",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:32.039699534Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:44350 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:31.772128Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.036734840s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "578",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddb7000bcaf3df7f0ffb",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:32.042419322Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "62069a9c1523fad3",
+    "timestamp": "2026-10-17T20:42:31.734251Z",
+    "trace": "projects/ember-511816/traces/baeb7a5b1dd472de84b0420f8a61ad68"
+  },
+  {
+    "insertId": "6ad3ddb5000bcd4408b69c08",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:30.043419138Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:44342 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:29.773444Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.031764200s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "578",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddb5000bd0ef4d2a3e6b",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:30.042572216Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "da196826c7e84a0d",
+    "timestamp": "2026-10-17T20:42:29.740834Z",
+    "trace": "projects/ember-511816/traces/3d9e223db01f07a5af5e16c2925ceee8"
+  },
+  {
+    "insertId": "6ad3ddb4000c568a0f0d0f36",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:29.041654724Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:44338 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:28.808586Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.096919037s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "578",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddb4000c594e42330938",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:29.046587636Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "6848705730ecad50",
+    "timestamp": "2026-10-17T20:42:28.710530Z",
+    "trace": "projects/ember-511816/traces/354ef0fca43627b6af5e16c2925ce135",
+    "traceSampled": true
+  },
+  {
+    "insertId": "6ad3ddb2000b4189e85b5e8f",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:27.047897418Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:44328 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:26.737673Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.027818541s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "578",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddb2000b44fb7ffb3a39",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:27.043945541Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "6cd032c4236c5d5b",
+    "timestamp": "2026-10-17T20:42:26.708784Z",
+    "trace": "projects/ember-511816/traces/86eb748c15174f6caf5e16c2925cea06"
+  },
+  {
+    "insertId": "6ad3ddb1000b49da5f9b0c85",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:26.049218739Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:44314 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:25.739802Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.028771761s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "578",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddb1000b4c8278dea504",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:26.047524929Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "6d130161a27caac7",
+    "timestamp": "2026-10-17T20:42:25.710147Z",
+    "trace": "projects/ember-511816/traces/51c0fad4e042dce1af5e16c2925ceb20"
+  },
+  {
+    "insertId": "6ad3ddaf000441c2919efc32",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:23.380716338Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:44310 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:23.278978Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.039146997s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "708",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "578",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddaf000444fa90b13972",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:23.381351491Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "470c7c6959654033",
+    "timestamp": "2026-10-17T20:42:23.238991Z",
+    "trace": "projects/ember-511816/traces/49306f66244f67ceaf5e16c2925cef7f"
+  },
+  {
+    "insertId": "6ad3ddad000bc1baf2b8e032",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:22.050559493Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:37334 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:21.770490Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "0.028664647s",
+      "protocol": "HTTP/1.1",
+      "referer": "https://ember-api-4a4r4yvz2a-as.a.run.app/",
+      "remoteIp": "2001:e68:5405:b1e7:717a:6efe:be8b:d9a9",
+      "requestMethod": "GET",
+      "requestSize": "709",
+      "requestUrl": "https://ember-api-4a4r4yvz2a-as.a.run.app/api/status",
+      "responseSize": "578",
+      "serverIp": "2600:1900:4243:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+    },
+    "insertId": "6ad3ddad000bc58c12d222c3",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-10-17T20:42:22.048876315Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "7350912b64d1018c",
+    "timestamp": "2026-10-17T20:42:21.740719Z",
+    "trace": "projects/ember-511816/traces/95c6bdd1d19ad094af5e16c2925ce8e8"
+  },
+  {
+    "insertId": "6ad3ddac00042a8c834edfc3",
+    "labels": {
+      "instanceId": "0010dd8607aa79fbc665b213c2cf11461c9065052217d059a102ce8107c916cbad2f972331d00a247af47855ca10c0b3757399417fbd09d22b0ed1596e663ffae753f6ec20d1dc3fb21ed6929433e09018a0acca1b50c3ab557c50"
+    },
+    "logName": "projects/ember-511816/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-10-17T20:42:20.382824065Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "ember-api",
+        "location": "asia-southeast1",
+        "project_id": "ember-511816",
+        "revision_name": "ember-api-00007-pem",
+        "service_name": "ember-api"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:37326 - \"GET /api/status HTTP/1.1\" 200 OK",
+    "timestamp": "2026-10-17T20:42:20.273036Z"
+  }
+]

@@ -3,6 +3,7 @@
 Ember - diagnostic
 
 Works out why content_sense.py is skipping every video.
+(reads the first stored video from Datastore instead of data/ember_signals.json)
 Prints the FULL error instead of swallowing it.
 
     python scripts/diagnose.py      (run from the project root)
@@ -13,6 +14,12 @@ import os
 import sys
 from pathlib import Path
 from google import genai
+from google.genai import types
+
+HERE = Path(__file__).resolve().parent
+for _p in (HERE, HERE.parent / "pipeline", HERE / "pipeline"):
+    sys.path.insert(0, str(_p))
+import store
 
 
 # Check if we are running locally or on GCP
@@ -22,10 +29,10 @@ if os.environ.get("K_SERVICE"):  # This env var is automatically set by Cloud Ru
     client = genai.Client(vertexai=True)
 else:
     print("Running locally. Falling back to local environment key...")
-    key = os.environ.get("GEMINI_API_KEY")
-    if not key:
-        sys.exit("GEMINI_API_KEY is not set in this terminal.")
-    client = genai.Client(api_key=key)
+    try:
+        client = genai.Client(api_key=store.gemini_key())
+    except RuntimeError as e:
+        sys.exit(str(e))
 
 # ---------------------------------------------------------------- 1. models
 print("=" * 64)
@@ -47,7 +54,7 @@ if not usable:
 
 # Prefer a flash model
 flash = [m for m in usable if "flash" in m and "lite" not in m and "image" not in m]
-model = "gemini-3.8-flash"
+model = os.environ.get("GEMINI_MODEL") or "gemini-3.8-flash"
 print(f"\n  --> will test with: {model}")
 
 # ---------------------------------------------------------------- 2. text
@@ -66,17 +73,17 @@ print("\n" + "=" * 64)
 print("TEST 2  YouTube video understanding")
 print("=" * 64)
 
-sig = Path("data/ember_signals.json")
-if sig.exists():
-    likes = json.loads(sig.read_text(encoding="utf-8")).get("likes", [])
-    url = likes[0]["url"] if likes else None
-    print(f"  using your first liked video: {likes[0]['title'][:50]}" if url else "")
+try:
+    likes = store.list_videos(os.environ.get("EMBER_CHILD_ID", "default"))
+except Exception as e:  # noqa: BLE001
+    print(f"  could not read Datastore: {type(e).__name__}: {str(e)[:120]}")
+    likes = []
+url = likes[0]["url"] if likes else None
+if url:
+    print(f"  using the first stored video: {likes[0]['title'][:50]}")
 else:
-    url = None
-
-if not url:
     url = "https://www.youtube.com/watch?v=aqz-KE-bpKQ"  # Big Buck Bunny, public
-    print("  ember_signals.json not found, using a known public video")
+    print("  no stored videos found, using a known public video")
 
 print(f"  {url}\n")
 

@@ -2,25 +2,24 @@
 """
 Ember pipeline - Stage 2: Curiosity Graph
 
-Reads video_records.json (from content_sense.py) and groups the videos into
-3-6 named themes: what DRAWS the child, which is not the same as what the
-videos are about. Writes themes.json.
+Joins the child's videos (kind Video) with their analyses (kind VideoAnalysis) and
+groups them into 3-6 named themes: what DRAWS the child, which is not the same as
+what the videos are about. Writes the Themes entity keyed by child_id.
 
     python curiosity_graph.py
     python curiosity_graph.py --age 11
+    python curiosity_graph.py --child default
 """
 
 import argparse
 import json
+import os
 import re
 import sys
 from datetime import datetime, timezone
-from pathlib import Path
 
 import gem
-
-INFILE = Path("video_records.json")
-OUTFILE = Path("themes.json")
+import store
 
 SCHEMA = {
     "type": "object",
@@ -167,16 +166,13 @@ def finalise(raw, ordered_ids):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--input", default=str(INFILE))
-    ap.add_argument("--output", default=str(OUTFILE))
+    ap.add_argument("--child", default=os.environ.get("EMBER_CHILD_ID", "default"))
     ap.add_argument("--age", type=int, default=None)
     args = ap.parse_args()
 
-    if not Path(args.input).exists():
-        sys.exit(f"{args.input} not found. Run content_sense.py first.")
-    records = json.loads(Path(args.input).read_text(encoding="utf-8"))
+    records = store.child_records(args.child)
     if not records:
-        sys.exit("video_records.json is empty.")
+        sys.exit("No analysed videos found. Run content_sense.py first.")
 
     videos = compact(records)
     prompt = (PROMPT.replace("__AGE__", gem.age_context(args.age))
@@ -189,7 +185,7 @@ def main():
     result["model"] = gem.MODEL
     result["child_age"] = args.age
 
-    Path(args.output).write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
+    store.put_doc("Themes", args.child, result)
 
     print(f"  {result['parent_summary']}\n")
     for t in result["themes"]:
@@ -198,7 +194,7 @@ def main():
         print(f"      {t['insight']}")
     if result["unassigned_video_ids"]:
         print(f"\n  {len(result['unassigned_video_ids'])} video(s) fit no theme")
-    print(f"\n  written to {args.output}\n")
+    print("\n  saved to Datastore (Themes)\n")
 
 
 if __name__ == "__main__":

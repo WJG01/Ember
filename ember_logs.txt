@@ -1,0 +1,2357 @@
+---
+insertId: 6ad3d5c50004416c2245671c
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:37.472171910Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:8218 - "GET /api/report HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:37.278892Z'
+---
+httpRequest:
+  latency: 0.048506206s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/report
+  responseSize: '7768'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5c5000443c52849f441
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:37.473853771Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 08de6e1a1a592ce8
+timestamp: '2026-10-17T20:08:37.229944Z'
+trace: projects/ember-511816/traces/a19ca7354fbb656c6334f976003de65e
+---
+insertId: 6ad3d5c500031323be55c716
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:37.472171910Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:8210 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:37.201507Z'
+---
+httpRequest:
+  latency: 0.027828832s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '1087'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5c50003158a99882c52
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:37.473853771Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: a42a0157b6930a7a
+timestamp: '2026-10-17T20:08:37.172906Z'
+trace: projects/ember-511816/traces/90712acb4cb155216334f976003de0bd
+---
+insertId: 6ad3d5c3000ac801537d6546
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:35.809046613Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:8204 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:35.706561Z'
+---
+httpRequest:
+  latency: 0.033808660s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5c3000ac9a9d16fee29
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:35.807955041Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: da81d0ea98bbaac6
+timestamp: '2026-10-17T20:08:35.672055Z'
+trace: projects/ember-511816/traces/7fbfa26321f1c60e8ba37eb0ec18cbbf
+---
+insertId: 6ad3d5c200033cda0400274a
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:34.477118730Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:8198 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:34.212186Z'
+---
+httpRequest:
+  latency: 0.037988121s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5c200033fa7fadd3da9
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:34.477785101Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 25100a7031241884
+timestamp: '2026-10-17T20:08:34.173580Z'
+trace: projects/ember-511816/traces/755179f3744e87278ba37eb0ec18ce56
+---
+insertId: 6ad3d5c0000abae32206dbee
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:32.809399936Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:8182 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:32.703203Z'
+---
+httpRequest:
+  latency: 0.029924665s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5c0000abd21b2f5a3c0
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:32.812059737Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 62e37798a31a2a6f
+timestamp: '2026-10-17T20:08:32.672908Z'
+trace: projects/ember-511816/traces/882c4b80d8a77f548ba37eb0ec18c2a4
+---
+insertId: 6ad3d5bf00033788a3333bda
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:31.481243810Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:8180 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:31.210824Z'
+---
+httpRequest:
+  latency: 0.039323102s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5bf00033ae03f25b0c1
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:31.479245599Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 0be50457cb6efcf8
+timestamp: '2026-10-17T20:08:31.170891Z'
+trace: projects/ember-511816/traces/ed7d9eb4c340ef138ba37eb0ec18c012
+---
+insertId: 6ad3d5bd000ab3e58a820a17
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:29.814395226Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:8168 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:29.701413Z'
+---
+httpRequest:
+  latency: 0.026893205s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5bd000ab6994190148d
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:29.815093495Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: ba6ee56566e0beb3
+timestamp: '2026-10-17T20:08:29.673684Z'
+trace: projects/ember-511816/traces/bf970ef53c1b814c8ba37eb0ec18c5e4
+---
+insertId: 6ad3d5bc000386701841639a
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:28.484579477Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:8164 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:28.231024Z'
+---
+httpRequest:
+  latency: 0.054247305s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5bc000388eae58aabea
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:28.483765301Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 6252c7cedd55030b
+timestamp: '2026-10-17T20:08:28.176180Z'
+trace: projects/ember-511816/traces/b63a5dbc64b454c68ba37eb0ec18c220
+traceSampled: true
+---
+insertId: 6ad3d5ba000ac42a375ab323
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:26.817474387Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:8216 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:26.705578Z'
+---
+httpRequest:
+  latency: 0.031770409s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '729'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5ba000ac67b246c9021
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:26.817116287Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 290db43fd6a634e2
+timestamp: '2026-10-17T20:08:26.673183Z'
+trace: projects/ember-511816/traces/31649d4975799fec8ba37eb0ec18c3e3
+---
+insertId: 6ad3d5b90003151421d8ad99
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:25.485991415Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:8212 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:25.202004Z'
+---
+httpRequest:
+  latency: 0.030350039s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5b90003176d29e34897
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:25.488215244Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 3d6d5f6e76f1a8ec
+timestamp: '2026-10-17T20:08:25.171196Z'
+trace: projects/ember-511816/traces/17f7fa20cb5deb2c8ba37eb0ec18c35a
+---
+insertId: 6ad3d5b7000ab1b66218f309
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:23.819679962Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:8198 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:23.700854Z'
+---
+httpRequest:
+  latency: 0.024799225s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5b7000ab3e851d06868
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:23.821823029Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 8435fd0addd93200
+timestamp: '2026-10-17T20:08:23.675315Z'
+trace: projects/ember-511816/traces/2fb22c497c16af308ba37eb0ec18c5ae
+---
+insertId: 6ad3d5b600037127128668e7
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:22.488854287Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:8194 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:22.225575Z'
+---
+httpRequest:
+  latency: 0.046426129s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5b60003736d9a57ec6c
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:22.489323270Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: fe2bdf91acdc8094
+timestamp: '2026-10-17T20:08:22.178223Z'
+trace: projects/ember-511816/traces/8521ca15f846cfb68ba37eb0ec18c957
+---
+insertId: 6ad3d5b4000b1697c3d1035a
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:20.821329687Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:8192 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:20.726679Z'
+---
+httpRequest:
+  latency: 0.049709492s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5b4000b18cbf6c851eb
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:20.821947649Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 8da4c7629b132d73
+timestamp: '2026-10-17T20:08:20.675936Z'
+trace: projects/ember-511816/traces/683669e39d0cb4b38ba37eb0ec18c03b
+---
+insertId: 6ad3d5b30003093fc612670a
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:19.490824572Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:8176 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:19.198975Z'
+---
+httpRequest:
+  latency: 0.027141816s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '729'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5b300030df84f96fae1
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:19.490319909Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 280c81f26389e59c
+timestamp: '2026-10-17T20:08:19.171753Z'
+trace: projects/ember-511816/traces/7a0695503ff6f77f8ba37eb0ec18c96b
+---
+insertId: 6ad3d5b1000aa46a032b72fc
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:17.824702814Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:8174 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:17.697450Z'
+---
+httpRequest:
+  latency: 0.024928071s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5b1000aa6adf382fcb9
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:17.824707344Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 5a1171b8b2c00051
+timestamp: '2026-10-17T20:08:17.671765Z'
+trace: projects/ember-511816/traces/1bbb8d72ce865676850d95a24882f1cf
+traceSampled: true
+---
+insertId: 6ad3d5b0000316a9370cbd92
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:16.493770283Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:34338 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:16.202409Z'
+---
+httpRequest:
+  latency: 0.026974543s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5b0000318c9f4df61c8
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:16.495699051Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: b823b74095ca5ed0
+timestamp: '2026-10-17T20:08:16.174454Z'
+trace: projects/ember-511816/traces/0837ec04d9cc81b5850d95a24882f07b
+---
+insertId: 6ad3d5ae000ac47244a12ec6
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:14.829345101Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:34336 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:14.705650Z'
+---
+httpRequest:
+  latency: 0.030064912s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5ae000ac61eb5ba0dc0
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:14.828794170Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: ea0050bd2e0d5296
+timestamp: '2026-10-17T20:08:14.674798Z'
+trace: projects/ember-511816/traces/edb4d4af46a03ff5850d95a24882f317
+---
+insertId: 6ad3d5ad0003091c7ea75c5a
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:13.500342933Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:34334 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:13.198940Z'
+---
+httpRequest:
+  latency: 0.027657868s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5ad00030b3bfb2f4457
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:13.500808558Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 1515090904515c07
+timestamp: '2026-10-17T20:08:13.170931Z'
+trace: projects/ember-511816/traces/37ad111fd32473b8850d95a24882fffe
+---
+insertId: 6ad3d5ab000ab746d2ef0c8e
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:11.830650614Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:34328 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:11.702278Z'
+---
+httpRequest:
+  latency: 0.028379447s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5ab000ab97cb6b9cc4a
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:11.832433810Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 68d8cc376691f59b
+timestamp: '2026-10-17T20:08:11.672802Z'
+trace: projects/ember-511816/traces/d24572270b282d09850d95a24882fb42
+---
+insertId: 6ad3d5aa000344ce976fe399
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:10.501204436Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:34322 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:10.214222Z'
+---
+httpRequest:
+  latency: 0.041944888s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5aa000346a393214ab9
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:10.501687802Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: ee99088fe67c4db7
+timestamp: '2026-10-17T20:08:10.171116Z'
+trace: projects/ember-511816/traces/0f78f99105684470850d95a24882f0f3
+---
+insertId: 6ad3d5a8000ac57b5a4a6e9c
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:08.834543190Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:34306 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:08.705915Z'
+---
+httpRequest:
+  latency: 0.030812752s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5a8000ac80e52b6660b
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:08.836035018Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 92232706e2f3b391
+timestamp: '2026-10-17T20:08:08.674373Z'
+trace: projects/ember-511816/traces/d47e867e108c1cd6850d95a24882ff7d
+---
+insertId: 6ad3d5a7000307287c0bdb21
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:07.504974326Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:21974 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:07.198440Z'
+---
+httpRequest:
+  latency: 0.027154563s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5a700030996b09e7006
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:07.501332551Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 97adcbe8c78166a0
+timestamp: '2026-10-17T20:08:07.170925Z'
+trace: projects/ember-511816/traces/25ad501f5e484441850d95a24882fdd6
+traceSampled: true
+---
+insertId: 6ad3d5a5000aafc8adea4fe5
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:05.839068690Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:21960 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:05.700360Z'
+---
+httpRequest:
+  latency: 0.027775171s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5a5000ab1d0982443a4
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:05.837042210Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 6705e44f24037cf8
+timestamp: '2026-10-17T20:08:05.672206Z'
+trace: projects/ember-511816/traces/1d9b7d1f9871143a850d95a24882fc2f
+---
+insertId: 6ad3d5a4000326031b5017ef
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:04.506770659Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:21944 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:04.206339Z'
+---
+httpRequest:
+  latency: 0.033008589s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5a400032840cbc499a6
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:04.507568061Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 2369f568ea7f05d3
+timestamp: '2026-10-17T20:08:04.172765Z'
+trace: projects/ember-511816/traces/7314172aa48d1ac8850d95a24882f601
+---
+insertId: 6ad3d5a2000abbfacada7304
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:02.839075054Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:21928 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:02.703482Z'
+---
+httpRequest:
+  latency: 0.030654607s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5a2000abe25f405d9ed
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:02.840080431Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 84fde8e072d07986
+timestamp: '2026-10-17T20:08:02.671986Z'
+trace: projects/ember-511816/traces/11b6c545a8299382850d95a24882fb1b
+---
+insertId: 6ad3d5a1000331d4d9c1f5d6
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:08:01.513736348Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:21926 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:08:01.209364Z'
+---
+httpRequest:
+  latency: 0.038260724s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5a1000333ff955890f2
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:08:01.510446049Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 645a47c61de94a6c
+timestamp: '2026-10-17T20:08:01.170602Z'
+trace: projects/ember-511816/traces/095b0bc3ecb5f294850d95a24882f057
+---
+insertId: 6ad3d59f000ab7b38a700d6f
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:59.843040381Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:21910 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:59.702387Z'
+---
+httpRequest:
+  latency: 0.029616670s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d59f000abb97e7654690
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:59.844429246Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: fd5815d0996b6538
+timestamp: '2026-10-17T20:07:59.672099Z'
+trace: projects/ember-511816/traces/90ece0d1d7076904850d95a24882f38a
+---
+insertId: 6ad3d59e00032602adffc64d
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:58.512920631Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:21902 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:58.206338Z'
+---
+httpRequest:
+  latency: 0.032285360s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d59e000327ae808ea1d1
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:58.515311538Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 028bca222ed5ec97
+timestamp: '2026-10-17T20:07:58.173377Z'
+trace: projects/ember-511816/traces/b03837104d35bc71850d95a24882f41d
+---
+insertId: 6ad3d59c000ab178caa3ec18
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:56.848740850Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:59540 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:56.700792Z'
+---
+httpRequest:
+  latency: 0.027923463s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d59c000ab367900538af
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:56.847128651Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 741b0c17e528659b
+timestamp: '2026-10-17T20:07:56.671914Z'
+trace: projects/ember-511816/traces/ceac29efd724f46e850d95a24882fc08
+traceSampled: true
+---
+insertId: 6ad3d59b00030cad13b1e7a0
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:55.515562232Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:59538 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:55.199853Z'
+---
+httpRequest:
+  latency: 0.027928858s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d59b00030ec938ca0b73
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:55.514568990Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: da36a1040ec18a6b
+timestamp: '2026-10-17T20:07:55.171144Z'
+trace: projects/ember-511816/traces/ed6d90e64a4b77cb850d95a24882f309
+---
+insertId: 6ad3d599000add2e0253dcac
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:53.848744740Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:59522 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:53.711982Z'
+---
+httpRequest:
+  latency: 0.038663113s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d599000adf8efeb40727
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:53.850322628Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: bae6b2d480e8569c
+timestamp: '2026-10-17T20:07:53.672853Z'
+trace: projects/ember-511816/traces/815d6b7d06fd39b6850d95a24882f50e
+---
+insertId: 6ad3d598000346467f3c452b
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:52.520585026Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:59508 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:52.214598Z'
+---
+httpRequest:
+  latency: 0.040001583s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d59800034838e9e86c26
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:52.515311450Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 5aa505e53f3823ab
+timestamp: '2026-10-17T20:07:52.173837Z'
+trace: projects/ember-511816/traces/39fe99b085439b4a850d95a24882f10b
+---
+insertId: 6ad3d596000aba130607cd6d
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:50.850309719Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:59492 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:50.702995Z'
+---
+httpRequest:
+  latency: 0.027583828s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d596000abc34ad392234
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:50.848731577Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 3bbee77df473106b
+timestamp: '2026-10-17T20:07:50.674612Z'
+trace: projects/ember-511816/traces/4bebf74a6ecc4e0b850d95a24882f753
+---
+insertId: 6ad3d5950003242c96a5f959
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:49.519861717Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:59488 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:49.205868Z'
+---
+httpRequest:
+  latency: 0.029114140s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d59500032644fd26506b
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:49.522784618Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 23d9929f5ebee6d9
+timestamp: '2026-10-17T20:07:49.176406Z'
+trace: projects/ember-511816/traces/124706085688927c60e83907415f8091
+---
+insertId: 6ad3d593000ab983315563f2
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:47.854143179Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:59486 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:47.702851Z'
+---
+httpRequest:
+  latency: 0.029258811s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d593000abbfd21faeb9a
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:47.856893056Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 142780a8ef4278d7
+timestamp: '2026-10-17T20:07:47.673125Z'
+trace: projects/ember-511816/traces/90dfd0080c3f577e60e83907415f8a55
+---
+insertId: 6ad3d592000311c58152845b
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:46.524221879Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:42532 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:46.201157Z'
+---
+httpRequest:
+  latency: 0.029628145s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5920003143a61fac265
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:46.525275084Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 59bd96237afef304
+timestamp: '2026-10-17T20:07:46.170857Z'
+trace: projects/ember-511816/traces/968244d9f1e61dbd60e83907415f8c0b
+traceSampled: true
+---
+insertId: 6ad3d590000ab3d697448dc2
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:44.859582496Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:42524 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:44.701398Z'
+---
+httpRequest:
+  latency: 0.028847900s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d590000ab59d8b89ba85
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:44.857511839Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: bcb335e1d829ed61
+timestamp: '2026-10-17T20:07:44.672041Z'
+trace: projects/ember-511816/traces/e433772f26fa4af160e83907415f8447
+---
+insertId: 6ad3d58f00031c633395c67b
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:43.525400619Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:42520 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:43.203875Z'
+---
+httpRequest:
+  latency: 0.030306530s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d58f00031e6b71480851
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:43.528151444Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 23a229b30d63df02
+timestamp: '2026-10-17T20:07:43.172915Z'
+trace: projects/ember-511816/traces/c50bbbfe40d0fac860e83907415f88d0
+---
+insertId: 6ad3d58d000aac028c7991e2
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:41.861317688Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:42510 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:41.699394Z'
+---
+httpRequest:
+  latency: 0.026808596s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d58d000aae35771edb20
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:41.860212413Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 71b100bd95d607e2
+timestamp: '2026-10-17T20:07:41.672101Z'
+trace: projects/ember-511816/traces/e8102a02a80d4cee60e83907415f869b
+---
+insertId: 6ad3d58c00031855ac8693f4
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:40.529855961Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:42502 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:40.202837Z'
+---
+httpRequest:
+  latency: 0.028919210s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '729'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d58c00031aad024af5d8
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:40.531150818Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 5f65a478e2cd9fe7
+timestamp: '2026-10-17T20:07:40.173336Z'
+trace: projects/ember-511816/traces/81b33cdad978b48760e83907415f8621
+---
+insertId: 6ad3d58a000aac8b2b49661e
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:38.866290892Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:42498 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:38.699531Z'
+---
+httpRequest:
+  latency: 0.027237752s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d58a000aaecd76dba2dd
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:38.869413106Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 35a622f4ed5fa7d5
+timestamp: '2026-10-17T20:07:38.671666Z'
+trace: projects/ember-511816/traces/98abbfff2b46da4f60e83907415f85a7
+---
+insertId: 6ad3d5890003024ed743a423
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:37.533797620Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:46832 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:37.197198Z'
+---
+httpRequest:
+  latency: 0.025492342s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5890003045b414dd0a5
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:37.531782538Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 6896138be0ac5add
+timestamp: '2026-10-17T20:07:37.171350Z'
+trace: projects/ember-511816/traces/95caceb6212681c360e83907415f82e6
+---
+insertId: 6ad3d587000aa294ee8ab398
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:35.866072764Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:46826 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:35.696980Z'
+---
+httpRequest:
+  latency: 0.027903543s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d587000aa50aebb164ac
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:35.866701273Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 2a58498cd11cfbd6
+timestamp: '2026-10-17T20:07:35.668701Z'
+trace: projects/ember-511816/traces/8d84a06ca94f8b0e60e83907415f88a3
+traceSampled: true
+---
+insertId: 6ad3d586000318cdebd59b22
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:34.533528355Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:46818 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:34.202957Z'
+---
+httpRequest:
+  latency: 0.029145754s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d58600031a839e02bd19
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:34.534878282Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 8677d310a46af842
+timestamp: '2026-10-17T20:07:34.172874Z'
+trace: projects/ember-511816/traces/62d867bb2b87ac9d60e83907415f8572
+---
+insertId: 6ad3d584000aea0cc40d6215
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:32.870198635Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:46808 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:32.715276Z'
+---
+httpRequest:
+  latency: 0.032953274s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '730'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d584000aebdcbc909a4b
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:32.867981253Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: bf2936e7441872e2
+timestamp: '2026-10-17T20:07:32.681523Z'
+trace: projects/ember-511816/traces/b018f3a4d8606d4760e83907415f82b1
+---
+insertId: 6ad3d583000305646a65ed9c
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:31.210097800Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:46804 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:31.197988Z'
+---
+httpRequest:
+  latency: 0.025471872s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5830003074b9c0591c2
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:31.205316668Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 8f125b7d4c683e3f
+timestamp: '2026-10-17T20:07:31.171785Z'
+trace: projects/ember-511816/traces/e7bfb38e91df8efe60e83907415f8c75
+---
+insertId: 6ad3d581000abb29735a104e
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:29.873400611Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:46788 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:29.703273Z'
+---
+httpRequest:
+  latency: 0.029686801s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d581000abd935d91ab63
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:29.869961840Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 2fc05f21f11857be
+timestamp: '2026-10-17T20:07:29.673082Z'
+trace: projects/ember-511816/traces/fed82944cb9b809360e83907415f8998
+---
+insertId: 6ad3d5800003463889c8c459
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:28.543739155Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:46772 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:28.214584Z'
+---
+httpRequest:
+  latency: 0.038800638s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d5800003486c72d5458a
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:28.541930923Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 0016ce3cff4e1921
+timestamp: '2026-10-17T20:07:28.174849Z'
+trace: projects/ember-511816/traces/45a5aa9edac7aba960e83907415f88ae
+---
+insertId: 6ad3d57e000ad38a041d248a
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:26.877959546Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:18838 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:26.709514Z'
+---
+httpRequest:
+  latency: 0.035021129s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d57e000ad54b6924eb53
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:26.876381885Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: a034b43c1e14be3f
+timestamp: '2026-10-17T20:07:26.674035Z'
+trace: projects/ember-511816/traces/3101623a8af708c760e83907415f84b9
+---
+insertId: 6ad3d57d000310b73909ada1
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Fstdout
+receiveTimestamp: '2026-10-17T20:07:25.210027084Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+textPayload: 'INFO:     169.254.169.126:18824 - "GET /api/status HTTP/1.1" 200 OK'
+timestamp: '2026-10-17T20:07:25.200887Z'
+---
+httpRequest:
+  latency: 0.029485691s
+  protocol: HTTP/1.1
+  referer: https://ember-api-328798827780.asia-southeast1.run.app/?auth=success
+  remoteIp: 2001:e68:5405:b1e7:717a:6efe:be8b:d9a9
+  requestMethod: GET
+  requestSize: '731'
+  requestUrl: https://ember-api-328798827780.asia-southeast1.run.app/api/status
+  responseSize: '991'
+  serverIp: '2600:1901:81d4:200::'
+  status: 200
+  userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/155.0.0.0 Safari/537.36
+insertId: 6ad3d57d000312a281e9363f
+labels:
+  instanceId: 0010dd860754a2b3f18ddf9562d0c22a095e18375ebd1a3857d1bb0017769d3a66b3c39908c7645c4752c262106ee4fb5a636ba0b0dec1572d9abf68991729b777a7502182a02ed9d42b3fba231e7d411ef47a7f82f319623ff4b234234ecd97
+logName: projects/ember-511816/logs/run.googleapis.com%2Frequests
+receiveTimestamp: '2026-10-17T20:07:25.212238844Z'
+resource:
+  labels:
+    configuration_name: ember-api
+    location: asia-southeast1
+    project_id: ember-511816
+    revision_name: ember-api-00006-jab
+    service_name: ember-api
+  type: cloud_run_revision
+severity: INFO
+spanId: 8664b4f5fb1565af
+timestamp: '2026-10-17T20:07:25.171048Z'
+trace: projects/ember-511816/traces/a398b2061013dcdd19e83d7b8e92760b
+traceSampled: true

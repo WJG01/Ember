@@ -2,7 +2,7 @@
 """
 Ember pipeline - Stage 1: Content Sense (v2, parent-report edition)
 
-Reads the liked videos from ember_signals.json, sends each one to Gemini as a
+Reads the child's videos from Datastore (kind Video), sends each one to Gemini as a
 YouTube URL, and extracts a structured record that serves TWO readers:
 
   1. The PARENT dashboard  - what the video actually contained, whether it is
@@ -15,24 +15,25 @@ v2 is ADDITIVE: every v1 field is still there. New fields are marked below.
 
 SETUP
 -----
-    pip install google-genai
-    set GEMINI_API_KEY=your-key-here        (mac/linux: export ...)
+    pip install -r requirements.txt
+    gcloud auth application-default login        (local only; Cloud Run uses its service account)
+    The Gemini key comes from env GEMINI_API_KEY or Secret Manager (see store.py).
 
 RUN
 ---
-    python content_sense.py                       # all videos
+    python content_sense.py                       # all of the child's videos
     python content_sense.py --limit 5             # try 5 first
     python content_sense.py --age 11              # calibrate safety to the child's age
-    python content_sense.py --input other.json
+    python content_sense.py --child default       # which Child (default: $EMBER_CHILD_ID or "default")
     python content_sense.py --no-cache            # force re-analysis
 
 OUTPUT
 ------
-    video_records.json          one record per video
-    cache/v2/<video_id>.json    per-video cache (gitignore it)
+    Datastore kind VideoAnalysis, keyed by video_id. It is shared by every child, so a
+    video analysed once is never sent to Gemini again.
 
-The cache folder is versioned. If you change RECORD_SCHEMA, bump SCHEMA_VERSION
-and old cached records are ignored instead of crashing the run.
+If you change RECORD_SCHEMA, bump ANALYSIS_SCHEMA_VERSION in store.py. Analyses stored
+with an older version are ignored and re-analysed instead of crashing the run.
 """
 
 import argparse
@@ -41,7 +42,6 @@ import os
 import sys
 import time
 from collections import Counter
-from pathlib import Path
 
 try:
     from google import genai
@@ -49,12 +49,12 @@ try:
 except ImportError:
     sys.exit("pip install google-genai")
 
-# Run diagnose.py to see which model names your key can use.
-MODEL = "gemini-3.8-flash"
+import store
 
-SCHEMA_VERSION = 2
-CACHE_DIR = Path("cache") / f"v{SCHEMA_VERSION}"
-OUTFILE = Path("video_records.json")
+# Run diagnose.py to see which model names your key can use.
+MODEL = os.environ.get("GEMINI_MODEL") or "gemini-3.8-flash"
+
+SCHEMA_VERSION = store.ANALYSIS_SCHEMA_VERSION   # bump it in store.py
 
 SECONDS_BETWEEN_CALLS = 5
 MAX_RETRIES = 4
@@ -257,13 +257,10 @@ def build_prompt(child_age):
     return PROMPT.replace("__AGE_CONTEXT__", ctx)
 
 
-def load_videos(path, limit):
-    if not Path(path).exists():
-        sys.exit(f"{path} not found. Run test_youtube_signals.py first.")
-    data = json.loads(Path(path).read_text(encoding="utf-8"))
-    videos = data.get("likes", [])
+def load_videos(child_id, limit):
+    videos = store.list_videos(child_id)
     if not videos:
-        sys.exit("No liked videos in that file.")
+        sys.exit(f"No videos stored for child '{child_id}'. Sync YouTube or add a video link first.")
     return videos[:limit] if limit else videos
 
 
@@ -371,31 +368,30 @@ def print_report(records):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--input", default="ember_signals.json")
+    ap.add_argument("--child", default=os.environ.get("EMBER_CHILD_ID", "default"))
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--age", type=int, default=None, help="child's age, calibrates safety")
     ap.add_argument("--no-cache", action="store_true")
     args = ap.parse_args()
 
-    key = os.environ.get("GEMINI_API_KEY")
-    if not key:
-        sys.exit("Set GEMINI_API_KEY. See SETUP in the docstring.")
-    client = genai.Client(api_key=key)
+    try:
+        client = genai.Client(api_key=store.gemini_key())
+    except RuntimeError as e:
+        sys.exit(str(e))
 
-    CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    videos = load_videos(args.input, args.limit)
+    videos = load_videos(args.child, args.limit)
     prompt = build_prompt(args.age)
+    cache = {} if args.no_cache else store.get_analyses([v["video_id"] for v in videos])
     print(f"\n{len(videos)} videos to process with {MODEL}\n")
 
     records, hits, done, skipped = [], 0, 0, 0
 
     for n, v in enumerate(videos, 1):
         vid = v["video_id"]
-        cached = CACHE_DIR / f"{vid}.json"
         print(f"[{n}/{len(videos)}] {v['title'][:64]}")
 
-        if cached.exists() and not args.no_cache:
-            rec = json.loads(cached.read_text(encoding="utf-8"))
+        if vid in cache:
+            rec = cache[vid]
             hits += 1
             print("      cached")
         else:
@@ -403,13 +399,11 @@ def main():
             if rec is None:
                 skipped += 1
                 continue
-            cached.write_text(json.dumps(rec, indent=2), encoding="utf-8")
+            store.put_analysis(vid, rec, model=MODEL, calibrated_age=args.age)
             done += 1
             print(f"      {rec['domain']} / edu={rec['educational_value']} / flag={rec['parent_flag']}")
             time.sleep(SECONDS_BETWEEN_CALLS)
 
-        # Personal context (who watched it, when) stays separate from the
-        # video analysis, which is shared and non-personal.
         records.append(
             {
                 "video_id": vid,
@@ -421,10 +415,9 @@ def main():
             }
         )
 
-    OUTFILE.write_text(json.dumps(records, indent=2), encoding="utf-8")
     print("\n" + "=" * 62)
     print(f"  analysed {done} · from cache {hits} · skipped {skipped}")
-    print(f"  written to {OUTFILE}")
+    print("  saved to Datastore (VideoAnalysis)")
     print("=" * 62)
 
     if records:

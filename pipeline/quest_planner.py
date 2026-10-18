@@ -2,26 +2,24 @@
 """
 Ember pipeline - Stage 3: Quest Planner
 
-Reads themes.json and video_records.json and proposes ONE weekend activity
-that grows the child's strongest transferable interest, with a split of who
-does what. Writes quest.json, which the dashboard renders as a printable
-Quest Card.
+Reads the Themes entity and the child's analysed videos from Datastore and
+proposes ONE weekend activity that grows the child's strongest transferable
+interest, with a split of who does what. Writes the Quest entity keyed by
+child_id, which the dashboard renders as a printable Quest Card.
 
     python quest_planner.py
     python quest_planner.py --age 11
+    python quest_planner.py --child default
 """
 
 import argparse
 import json
+import os
 import sys
 from datetime import datetime, timezone
-from pathlib import Path
 
 import gem
-
-THEMES = Path("themes.json")
-RECORDS = Path("video_records.json")
-OUTFILE = Path("quest.json")
+import store
 
 SCHEMA = {
     "type": "object",
@@ -105,17 +103,18 @@ def finalise(quest, valid_ids, theme_names):
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--child", default=os.environ.get("EMBER_CHILD_ID", "default"))
     ap.add_argument("--age", type=int, default=None)
-    ap.add_argument("--output", default=str(OUTFILE))
     args = ap.parse_args()
 
-    for p in (THEMES, RECORDS):
-        if not p.exists():
-            sys.exit(f"{p} not found. Run the earlier stages first.")
-    themes = json.loads(THEMES.read_text(encoding="utf-8"))
-    records = json.loads(RECORDS.read_text(encoding="utf-8"))
+    themes = store.get_doc("Themes", args.child)
+    if not themes:
+        sys.exit("No themes found. Run curiosity_graph.py first.")
+    records = store.child_records(args.child)
+    if not records:
+        sys.exit("No analysed videos found. Run content_sense.py first.")
     if not themes.get("themes"):
-        sys.exit("themes.json has no themes.")
+        sys.exit("The Themes entity has no themes.")
 
     theme_payload = [
         {k: t[k] for k in ("name", "insight", "confidence", "trajectory",
@@ -136,12 +135,12 @@ def main():
         "child_age": args.age,
         "quest": quest,
     }
-    Path(args.output).write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
+    store.put_doc("Quest", args.child, result)
 
     print(f"  {quest['title']}  ({quest['duration_minutes']} min, cost: {quest['cost']})")
     print(f"  grows: {quest['theme_name']}")
     print(f"  {quest['why_this']}")
-    print(f"\n  written to {args.output}\n")
+    print("\n  saved to Datastore (Quest)\n")
 
 
 if __name__ == "__main__":
