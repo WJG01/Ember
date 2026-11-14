@@ -13,7 +13,7 @@ gemini-3.5-flash-lite
 
 gcloud secrets versions access latest --secret=gemini-api-key-new | python -c "import sys; s=sys.stdin.read(); print(len(s), repr(s[-4:]))"
 
-gcloud secrets add-iam-policy-binding gemini-api-key-new --member="serviceAccount:328798827780-compute@developer.gserviceaccount.com" --role="roles/secretmanager.secretAccessor"
+gcloud secrets add-iam-policy-binding gemini-api-key-new --member="serviceAccount:xxx-compute@developer.gserviceaccount.com" --role="roles/secretmanager.secretAccessor"
 
 
 
@@ -23,9 +23,9 @@ gcloud run services update ember-api --region asia-southeast1 --update-secrets G
 
 
 
-gcloud run deploy ember-api --source . --region asia-southeast1 --service-account="328798827780-compute@developer.gserviceaccount.com" --no-cpu-throttling --max-instances=1 --allow-unauthenticated --set-env-vars EMBER_CHILD_ID=default,EMBER_REDIRECT_URI=https://ember-api-328798827780.asia-southeast1.run.app/auth/callback --set-secrets GEMINI_API_KEY=gemini-api-key-new:latest,EMBER_CLIENT_SECRET_JSON=ember-oauth-client:latest
+gcloud run deploy ember-api --source . --region asia-southeast1 --service-account="xxx-compute@developer.gserviceaccount.com" --no-cpu-throttling --max-instances=1 --allow-unauthenticated --set-env-vars EMBER_CHILD_ID=default,EMBER_REDIRECT_URI=https://ember-api-328798827780.asia-southeast1.run.app/auth/callback --set-secrets GEMINI_API_KEY=gemini-api-key-new:latest,EMBER_CLIENT_SECRET_JSON=ember-oauth-client:latest
 
---set-env-vars EMBER_CHILD_ID=default,GEMINI_MODEL=gemini-3.5-flash-lite,EMBER_REDIRECT_URI=https://ember-api-328798827780.asia-southeast1.run.app/auth/callback
+--set-env-vars EMBER_CHILD_ID=default,GEMINI_MODEL=gemini-3.5-flash-lite,EMBER_REDIRECT_URI=https://ember-api-xxx.asia-southeast1.run.app/auth/callback
 
 
 gcloud run services describe ember-api --region asia-southeast1 --format="value(spec.template.spec.containers[0].env)"
