@@ -1,0 +1,45 @@
+API Key
+AQ.Ab8RN6IWjOosJkzJfxuk8KIpZaPRHSRE89Jo8-VtPFoeNb8vxA
+Name
+Gemini API Key
+Project name
+projects/328798827780
+Project number
+328798827780
+
+
+set GEMINI_API_KEY=AQ.Ab8RN6IWjOosJkzJfxuk8KIpZaPRHSRE89Jo8-VtPFoeNb8vxA
+
+$env:GEMINI_API_KEY = "AQ.Ab8RN6IWjOosJkzJfxuk8KIpZaPRHSRE89Jo8-VtPFoeNb8vxA"
+
+# Create the secret container
+gcloud secrets create GEMINI_API_KEY --replication-policy="automatic"
+
+# Add your actual API key as the first version
+echo -n "AQ.Ab8RN6IWjOosJkzJfxuk8KIpZaPRHSRE89Jo8-VtPFoeNb8vxA" | gcloud secrets versions add GEMINI_API_KEY --data-file=-
+
+
+
+
+
+2. Bind the Secret to Cloud Run during deployment
+
+gcloud run deploy ember-api \
+  --source . \
+  --region asia-southeast1 \
+  --service-account="YOUR_SERVICE_ACCOUNT_EMAIL" \
+  --allow-unauthenticated \
+  --update-secrets="GEMINI_API_KEY=GEMINI_API_KEY:latest"
+
+
+
+
+gcloud run jobs deploy ember-pipeline \
+  --source . \
+  --region asia-southeast1 \
+  --command python \
+  --args=-m,pipeline.job \
+  --task-timeout=30m \
+  --service-account="YOUR_SERVICE_ACCOUNT_EMAIL" \
+  --update-secrets="GEMINI_API_KEY=GEMINI_API_KEY:latest"
+

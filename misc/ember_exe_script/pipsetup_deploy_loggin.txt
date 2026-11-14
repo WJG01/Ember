@@ -1,0 +1,27 @@
+pip install -r requirements.txt
+gcloud config set project ember-511816
+gcloud auth application-default login
+gcloud firestore databases create --database=ember --location=asia-southeast1 --type=datastore-mode   # skip if already created
+
+python scripts/migrate_local.py --dir ../data . --child default --name "<child name>" --age 11
+
+
+
+python your_script.py --dir ../data
+
+
+python migrate_local.py --dir ../data --child default --name "Llamie1	" --age 11
+
+
+
+FINAL
+gcloud run deploy ember-api --source . --region asia-southeast1 --service-account="328798827780-compute@developer.gserviceaccount.com" --no-cpu-throttling --max-instances=1 --allow-unauthenticated --set-env-vars EMBER_CHILD_ID=default,EMBER_REDIRECT_URI=https://ember-api-328798827780.asia-southeast1.run.app/auth/callback --set-secrets GEMINI_API_KEY=gemini-api-key:latest,EMBER_CLIENT_SECRET_JSON=ember-oauth-client:latest
+
+
+see log
+gcloud logging read "resource.type=cloud_run_revision AND resource.labels.service_name=ember-api" --limit=100 --format="value(textPayload)"
+
+
+gcloud logging read "resource.type=cloud_run_revision AND resource.labels.service_name=ember-api" --limit=100
+
+gcloud logging read "resource.type=cloud_run_revision AND resource.labels.service_name=ember-api" --limit=100 --format=json > ember_logs.json

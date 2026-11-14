@@ -1,0 +1,48 @@
+cd /path/to/your/my-ember-project
+
+# 1. Log into your Google Cloud account
+gcloud auth login
+
+# 2. Link your terminal session to your specific GCP project
+gcloud config set project ember-511816
+
+
+Step 3: Run the Cloud Run Deployment Command
+gcloud run deploy ember-api \
+  --source . \
+  --region asia-southeast1 \
+  --service-account="weijungan123@gmail.com" \
+  --allow-unauthenticated
+
+
+
+Step 4: Capture Your Live Deployment Link
+Building using Buildpacks... Done.
+Deploying... Done.
+Service [ember-api] revision [ember-api-00001-xyz] has been deployed and is serving 100% of traffic.
+Service URL: https://run.app
+
+
+gcloud logging read "resource.type=cloud_run_revision AND resource.labels.service_name=ember-api" --limit=20 --format="value(textPayload)"
+
+
+gcloud run deploy ember-api --source . --region asia-southeast1 --service-account="328798827780-compute@developer.gserviceaccount.com" --allow-unauthenticated
+
+
+gcloud run deploy ember-api --source . --region asia-southeast1 --allow-unauthenticated   # demo only
+gcloud run jobs deploy ember-pipeline --source . --region asia-southeast1 \
+  --command python --args=-m,pipeline.job --task-timeout=30m
+
+
+CPU throttling: deploy with --no-cpu-throttling. The pipeline runs in a thread after the HTTP response, and Cloud Run throttles CPU between requests, so it would crawl otherwise.
+
+
+
+
+FINAL
+gcloud run deploy ember-api --source . --region asia-southeast1 \
+  --service-account="328798827780-compute@developer.gserviceaccount.com" \
+  --no-cpu-throttling --max-instances=1 \
+  --allow-unauthenticated \
+  --set-env-vars EMBER_CHILD_ID=default,EMBER_REDIRECT_URI=https://ember-api-328798827780.asia-southeast1.run.app/auth/callback \
+  --set-secrets GEMINI_API_KEY=gemini-api-key:latest,EMBER_CLIENT_SECRET_JSON=ember-oauth-client:latest

@@ -1,0 +1,10 @@
+AQ.Ab8RN6IWjOosJkzJfxuk8KIpZaPRHSRE89Jo8-VtPFoeNb8vxA
+
+echo|set /p="AQ.Ab8RN6IWjOosJkzJfxuk8KIpZaPRHSRE89Jo8-VtPFoeNb8vxA" | gcloud secrets create gemini-api-key --data-file=-
+
+
+
+
+AQ.Ab8RN6Lds40gofTATxJnVp2VL0yCYD8YExRR-zaByOxDo9qqDg
+
+AQ.Ab8RN6IWjOosJkzJfxuk8KIpZaPRHSRE89Jo8-VtPFoeNb8vxA

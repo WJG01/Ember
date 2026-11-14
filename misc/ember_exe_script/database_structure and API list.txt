@@ -1,0 +1,39 @@
+My Billing Account, 012F49-6344BD-B8B672
+
+
+
+1. Project and APIs
+bash
+gcloud config set project ember-511816
+gcloud services enable run.googleapis.com firestore.googleapis.com \
+  youtube.googleapis.com secretmanager.googleapis.com \
+  cloudbuild.googleapis.com artifactregistry.googleapis.com aiplatform.googleapis.com
+
+
+2. Datastore
+gcloud firestore databases create --database=ember \
+  --location=asia-southeast1 --type=datastore-mode
+
+Then create clients with datastore.Client(database="ember") and add google-cloud-datastore to requirements.txt.
+
+Kind	Key	Replaces
+Child	child_id	child name, age, connection state
+Video	child_id + video_id	ember_signals.json likes
+VideoAnalysis	video_id	video_records.json and cache/v2/
+Themes	child_id	themes.json
+Quest	child_id	quest.json
+Run	run_id	the in-memory _state (status, step, progress, error)
+OAuthState	state	_pending_verifiers, with a short expiry
+
+
+
+3. Make Sync run the pipeline properly
+
+Use a Cloud Run Job for the pipeline:
+
+POST /api/sync creates a Run entity with status queued, starts the job with CHILD_ID and RUN_ID, and returns immediately.
+The job reads the likes, then runs the three stages. After each stage it updates the Run entity (step, progress, error).
+The dashboard keeps polling /api/status, which now reads the Run entity. Any instance can answer it.
+When the run finishes, /api/report reads VideoAnalysis, Themes and Quest.
+
+This needs a refactor. Add a small store.py with get_videos, save_analysis, save_themes, set_run_status and so on, with a local-file backend and a Datastore backend chosen by EMBER_STORE=local|datastore. The three stage scripts call it instead of reading and writing JSON. The subprocess runner becomes a job entrypoint such as python -m pipeline.job.

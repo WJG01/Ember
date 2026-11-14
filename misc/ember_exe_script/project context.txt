@@ -1,0 +1,109 @@
+2. The product
+Ember — turns what your kids watch into what your family does.
+Problem
+Children watch hours of video daily. Much of it is genuinely good — craft, science, cooking, construction. But consumption is where it stops. Parents can see how many hours; nothing tells them what it means or what to do about it. Screen-time tools restrict. Platform recommenders optimise for retention — their best outcome is another video.
+Ember's position: attention a child already gave something is a signal, not a problem. The job is to redirect it.
+The loop
+Connect → Understand → Map → Act → feedback → back to Map
+1.	Connect — guardian authorises access to the child's YouTube signal
+2.	Understand — Gemini analyses the videos themselves, not titles
+3.	Map — builds a Curiosity Graph of inferred themes per child
+4.	Act — proposes one grounded, doable activity each week
+Five differentiators
+1.	Video understanding, not metadata. Titles cannot distinguish a survival documentary from a survival game stream.
+2.	Themes, not tags. Every theme carries reasoning and cited evidence. A theme without reasoning is a tag.
+3.	Every output ends offscreen. Design constraint: you don't solve a screen-time problem by adding a screen. Outputs terminate in a printable Quest Card.
+4.	Common Ground. Intersect two siblings' graphs at theme level → an activity neither profile produces alone.
+5.	Household-scoped. Data never leaves the family tenant. Outsiders get a generated PDF, never an account. Share by artifact, not by access.
+6.	Decisions already made — do not revisit
+Decision	Why
+Household is the tenant, not the individual	Enables Common Ground; matches how families work; legible subscription model
+Guardians only, no extended family	An aunt with her own kids has no stake in this child's development
+Video understanding, not metadata	The foundation of everything above it
+AI proposes the activity, guardian edits	Handing synthesis back to the user signals the model does analysis but not reasoning
+Weekly, not monthly	Monthly is too slow to build a habit and too slow to demo
+Four agents, one Cloud Run service	Agentic architecture, one deployment to debug under pressure
+Screen 8 ("This week") is home, not the graph	Putting the graph first turns Ember into an analytics dashboard
+Saves are an input to the graph, never the source	A product built on guardian saves can only reflect what the guardian already believed
+Three input tiers, tier 1 as default	Takeout as the front door would lose non-technical households
+Synthetic histories, real videos	Deterministic demo with genuine model work
+
+
+ Where the data comes from
+The YouTube Data API cannot return watch history. relatedPlaylists.watchHistory was deprecated in 2016 and returns the placeholder HL. No OAuth scope for history exists. favorites is also deprecated. Only likes, uploads and subscriptions remain usable. Do not waste time rediscovering this.
+Tier	Source	Friction	Status
+0	Guardian saves a video	none	not built
+1	Child's likes + subscriptions via one OAuth tap	one tap	VALIDATED
+2	Full watch history — Takeout JSON or Data Portability API	high	not built
+Tier 1 reads contentDetails.relatedPlaylists.likes from channels.list, then playlistItems.list, plus subscriptions.list. Scope: youtube.readonly.
+Consent chain: Family Link establishes that a parent may access and export their child's Google data. Ember exercises that existing right with explicit authorisation.
+Gotcha found the hard way: the likes playlist only exists once the account has a YouTube channel. If channels.list returns no items, there is nothing to read. Ember must detect and handle this in onboarding.
+________________________________________
+5. Architecture — Google Cloud only
+signal in
+   ↓
+[Content Sense]    Gemini Flash — native video understanding
+   ↓
+[Curiosity Graph]  Gemini Pro — themes + reasoning + evidence
+   ↓
+[Quest Planner]    Gemini Pro + Search grounding — real local options
+   ↓
+[Guardian]         Gemini Flash — safety and age gate
+   ↓
+parent digest + printable Quest Card → feedback → back to the graph
+Layer	Services
+Presentation	Firebase Hosting, Firebase Auth, App Check
+Orchestration	Cloud Run, Agent Development Kit, Cloud Tasks, Cloud Scheduler
+Intelligence	Agent Platform — Gemini Flash + Pro, Search grounding, Embeddings, Imagen
+Data	Firestore, Cloud Storage, Secret Manager
+Ops	Cloud Build, Artifact Registry, Cloud Logging
+Naming note: Vertex AI was renamed to the Gemini Enterprise Agent Platform; it no longer appears in the Cloud Console as "Vertex AI" (cutover 21 May 2026). Look for Agent Platform. The API service name is unchanged — search aiplatform in the API Library, not "Vertex AI". ADK is unaffected.
+Why the video cache sits outside the tenant: a video's content is a property of the video, not the child. Cached globally by video ID, contains no personal data, and cache hit rate climbs with adoption — the thousandth household costs less to serve than the first. This is the unit-economics argument in the pitch.
+. Current state
+Done
+•	GCP project ember-hackathon-google-2026, billing linked, IAM for all four members
+•	YouTube Data API v3 enabled, OAuth consent screen in Testing mode
+•	Test account Llamie (llamie12345678910@gmail.com) — a fake child, 17 liked videos, 4 subscriptions, has a YouTube channel
+•	test_youtube_signals.py — tier 1 validation, working
+•	content_sense.py — stage 1 of the pipeline, working
+•	Solution design document v1.2 (21 pages)
+•	GitHub repo created
+GATE 0 — PASSED
+Fed Llamie's liked videos to Gemini and asked for underlying themes. Returned four genuine behavioural themes, not tags:
+1.	Subverting the mundane — re-engineering everyday staples
+2.	Accessing the restricted — behind-the-scenes and hidden systems
+3.	The gamification of rarity, loot tiers and values
+4.	Mechanical choreography and "oddly satisfying" optimisation
+The key finding. The team lead expected "likes Japanese food → take a trip to Japan." Gemini found the food was incidental — the real draw was things being made with precision, and systems working beautifully. That also explains an ocean-cleaning robot video sitting in the same set, which no tag-based system would ever connect to ramen.
+Two consequences:
+•	This is the demo beat. Show the wrong answer first, then the real one.
+•	A child's history looks random because topics change, but what draws them doesn't. YouTube's algorithm scattering them across topics is an asset — more angles on the same underlying interest.
+Also learned: theme 3 (rarity/loot tiers) is a real interest that does not transfer to an offline activity. The schema has a transferable flag for exactly this. Don't discard those themes; mark them low-transferability.
+Not yet validated
+•	Tier 1 on a supervised child account (only tested on a standard account)
+•	Whether YouTube Kids viewing appears in Takeout
+•	Whether the Quest Planner produces good activities from themes
+________________________________________
+7. The pipeline — build locally first
+ember_signals.json         ← test_youtube_signals.py   DONE
+   ↓
+video_records.json         ← content_sense.py          WORKING
+   ↓
+themes.json                ← curiosity_graph.py        NEXT
+   ↓
+quest.json                 ← quest_planner.py          after that
+   ↓
+Firestore → Cloud Run → frontend
+Build the intelligence as local scripts writing JSON before touching infrastructure. The Content Sense prompt will need ~20 revisions; locally that's a 2-second run, deployed it's a 4-minute container rebuild. Teams lose days to this.
+The schema that matters
+Per video, Content Sense extracts: surface_topic, underlying_draw, concepts, modality (procedural/narrative/passive/reactive), vocabulary_band, affect, latent_skill, transferable, evidence.
+surface_topic vs underlying_draw is the whole product. Surface is what a title-based system would say ("Japanese gourmet sandwiches"). Underlying is the actual pattern of appeal ("humble everyday foods deconstructed and rebuilt"). If those two columns read the same, the prompt has failed.
+________________________________________
+8. Next steps by role
+ML / Data
+•	Complete the content_sense.py run on all 17 videos
+•	Review surface vs underlying across all of them — do several unrelated surfaces share an underlying draw? That's what the graph needs.
+•	Build curiosity_graph.py — synthesise records into 3–6 named themes with reasoning, evidence, confidence, trajectory
+•	Name themes in plain parent language. Gate 0 returned things like "Subverting the Mundane: Re-Engineering Everyday Staples" — right insight, wrong register. Should be "Taking ordinary things apart." Under six words, no colons, no jargon.
+•	Build quest_planner.py — themes → one weekend activity, with per-child ownership split
+

@@ -1,0 +1,17 @@
+
+🛠️ What You CAN Do From the Parent Account (Family Link)
+
+While you cannot read their history, you can remotely manage their YouTube behavior from your device by navigating to Controls > Content restrictions > YouTube:
+• Pause History: You can toggle "Pause watch history" or "Pause search history". This stops YouTube from recording what they watch moving forward.
+• Wipe History: You can hit Clear watch and search history to instantly erase everything they have watched up to this point across all their devices.
+• Change Content Levels: You can adjust their age filters (e.g., changing access from YouTube Kids to a supervised 13+ setting).
+
+📺 The "YouTube Kids" Exception
+
+If your child is strictly using the YouTube Kids app (rather than regular YouTube) and you log into the Google YouTube Kids app on your own phone using your parent account, you can see their recent watch history by tapping their profile icon inside that app. This only works for the Kids-specific platform, not standard YouTube.
+
+🔍 How to View Standard YouTube History
+
+If they are using the standard version of YouTube under a supervised account, you have no choice but to use their account or physical device to look at the data:
+1. On their physical device: Open the YouTube app, tap their profile, and view the History tab.
+2. From any browser: Go to the Google My Activity Page and sign in using your child's email and password.

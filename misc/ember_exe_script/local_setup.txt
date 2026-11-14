@@ -1,0 +1,59 @@
+continuation to built my integration to parent able to monitor child likes video and interest in standard youtube account, to be linked as integration feature to family link google app. i am using html, javascript, fastapi and gcp product, please make the media size as standard mobile webapp
+
+build everything in standard project file structure, ui strictly follow current family link ui , keep the other module button static, and addd new integration module f(the new whole ember project) in a new space module, preview webapp is just for the feature reference how it looks
+
+below are requirement:
+task list
+write pipeline stage for gem helper py, quest planner py, reading video records py, writing themes json
+Request
+Description
+gem.py, curiosity_graph.py, quest_planner.py reading video_records.json and writing themes.json / quest.json
+
+write fastapi backend oauth, sync, run piepelin, report api
+Request
+Description
+main.py with /auth/start, /auth/callback, /api/sync via run, /api/videos, /api/run, /api/status, /api/report
+
+build bare html js parent dashboard
+static/index.html, style.css, app.js: summary, KPIs, quest card (printable), attention list, themes, graph, domain/education charts, video cards
+
+requirement
+fastapi
+uvicorn
+google-genai
+google-auth-oauthlib
+google-api-python-client
+
+
+Ember: local setup
+
+Parent dashboard for what a child watches on YouTube. FastAPI backend, plain HTML/JS frontend.
+
+main.py              FastAPI: sign-in, sync, run pipeline, /api/report, serves static/
+content_sense.py     stage 1: Gemini watches each video (parent report + curiosity fields)
+curiosity_graph.py   stage 2: groups videos into themes
+quest_planner.py     stage 3: one weekend activity (the printable card)
+gem.py               shared Gemini helper for stages 2-3
+static/              index.html, style.css, app.js
+demo_data/           sample data, shown until you run a real analysis
+test_youtube_signals.py, diagnose.py   your original test scripts
+
+B. Connect YouTube (the child taps Allow once).
+
+In Google Cloud, create an OAuth client of type Web application. Authorised redirect URI: http://localhost:8080/auth/callback
+Download it as client_secret.json and put it next to main.py.
+Add the child's account to Test users (Audience page).
+Click "Connect YouTube", sign in as the child in a private window, tap Allow.
+Click "Sync and analyse".
+
+Demo day checklist
+Run the analysis the day before; results are saved in video_records.json, themes.json, quest.json.
+Testing-mode tokens expire after 7 days: reconnect the day before if using option B.
+$env:EMBER_DEMO = "1" forces the sample data if the wifi or API fails on stage.
+$env:EMBER_CHILD_NAME = "Llamie" and $env:EMBER_CHILD_AGE = "11" set the name shown and calibrate safety judgements.
+If gemini-3.8-flash is rejected, run python diagnose.py and change MODEL in content_sense.py.
+Use the "Print this card" button to show the offline end of the loop.
+Notes
+This is a proof of concept: the API has no login and tokens are stored in token.json. Do not put it on the public internet as it is.
+The dashboard says "liked videos", not "watched": the YouTube API does not expose watch history.
+Moving to Cloud Run later: replace the local JSON files with Firestore and the token file with Secret Manager. The pipeline scripts need no change.

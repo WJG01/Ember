@@ -1,0 +1,6 @@
+ ember-api-00011-yar
+
+gcloud run services update ember-api --region asia-southeast1 --update-env-vars RESTART_AT=1
+
+
+gcloud run revisions delete  ember-api-00011-yar --region asia-southeast1

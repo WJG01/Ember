@@ -1,0 +1,11 @@
+gcloud run services describe ember-api \
+    --region=asia-southeast1 \
+    --format="value(spec.template.spec.serviceAccountName)"
+
+
+328798827780-compute@developer.gserviceaccount.com
+
+
+gcloud projects add-iam-policy-binding 	ember-511816 \
+    --member="serviceAccount:328798827780-compute@developer.gserviceaccount.com" \
+    --role="roles/secretmanager.secretAccessor"

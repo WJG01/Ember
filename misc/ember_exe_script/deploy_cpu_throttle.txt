@@ -1,0 +1,6 @@
+gcloud run deploy ember-api --source . --region asia-southeast1 --allow-unauthenticated   # demo only
+gcloud run jobs deploy ember-pipeline --source . --region asia-southeast1 \
+  --command python --args=-m,pipeline.job --task-timeout=30m
+
+
+CPU throttling: deploy with --no-cpu-throttling. The pipeline runs in a thread after the HTTP response, and Cloud Run throttles CPU between requests, so it would crawl otherwise.
